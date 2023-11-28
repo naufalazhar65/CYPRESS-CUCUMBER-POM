@@ -1,0 +1,124 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Edit User Profile",
+    "line": 1,
+    "id": "edit-user-profile",
+    "tags": [],
+    "uri": "EditUserTest.feature",
+    "elements": [
+      {
+        "id": "edit-user-profile;edit-user-profile",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Edit User Profile",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is logged in",
+            "result": {
+              "status": "passed",
+              "duration": 9193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user is on the edit user page",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar65@gmail.com",
+                      "123456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user updates their profile with the following details",
+            "result": {
+              "status": "passed",
+              "duration": 1470000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user clicks the \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user should see a success message",
+            "result": {
+              "status": "passed",
+              "duration": 1285000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar65@gmail.com",
+                      "123456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user details should be updated",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

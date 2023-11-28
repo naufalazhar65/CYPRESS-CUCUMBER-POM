@@ -22,7 +22,7 @@
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 4974000000
+              "duration": 3141000000
             }
           },
           {
@@ -43,7 +43,7 @@
                     "cells": [
                       "Naufal",
                       "Azhar",
-                      "naufalazhar10@gmail.com",
+                      "naufalazhar30@gmail.com",
                       "1234567890",
                       "password123",
                       "password123"
@@ -57,7 +57,7 @@
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 4659000000
+              "duration": 4721000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "the user should be redirected to the dashboard",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 8000000
             }
           }
         ]
@@ -87,7 +87,7 @@
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 2606000000
+              "duration": 1558000000
             }
           },
           {
@@ -108,7 +108,7 @@
                     "cells": [
                       "Naufal",
                       "Azhar",
-                      "naufalazhar10@gmail.com",
+                      "naufalazhar30@gmail.com",
                       "1234567890",
                       "password123",
                       "password123"
@@ -122,7 +122,7 @@
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 4455000000
+              "duration": 3654000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           }
         ]
@@ -152,7 +152,7 @@
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 2001000000
+              "duration": 1088000000
             }
           },
           {
@@ -187,7 +187,7 @@
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 3658000000
+              "duration": 2506000000
             }
           },
           {
@@ -197,7 +197,7 @@
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           }
         ]
