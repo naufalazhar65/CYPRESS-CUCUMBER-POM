@@ -1,0 +1,207 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User Registration",
+    "line": 1,
+    "id": "user-registration",
+    "tags": [],
+    "uri": "RegisterTest.feature",
+    "elements": [
+      {
+        "id": "user-registration;successful-registration",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful registration",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 4974000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar10@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 4659000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the user should be redirected to the dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-with-existing-email",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Registration with existing email",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 2606000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar10@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 4455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "an error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-with-mismatched-passwords",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Registration with mismatched passwords",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 2001000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar1@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password12356"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 3658000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "an error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
