@@ -1,0 +1,112 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Product Checkout",
+    "line": 1,
+    "id": "product-checkout",
+    "tags": [],
+    "uri": "ProductCheckoutTest.feature",
+    "elements": [
+      {
+        "id": "product-checkout;checkout-product",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Checkout Product",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 7594000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user adds a product to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 1672000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user proceeds to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 2248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be on the checkout page",
+            "result": {
+              "status": "failed",
+              "duration": 10181000000,
+              "error_message": "AssertionError: Timed out retrying after 10000ms: expected '[ <tr>, 2 more... ]' to contain 'Eco Tax (-2.00):'\n    at ProductCheckoutPage.verifyCheckoutPage (cypress/e2e/cucumber/Pages/ProductCheckoutPage/ProductCheckoutPage.cy.js:59:4)\n    at Context.eval (cypress/e2e/cucumber/Tests/ProductCheckoutTest/ProductCheckoutTest.cy.js:19:21)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Telephone",
+                      "FirstName",
+                      "LastName",
+                      "Company",
+                      "Address1",
+                      "Address2",
+                      "City",
+                      "PostCode",
+                      "Comment"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "123456",
+                      "Naufal",
+                      "Azhar",
+                      "Pt.mamkmur",
+                      "jalan1",
+                      "jalan2",
+                      "jakarta",
+                      "1234",
+                      "hallo"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user completes the checkout process",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user should see a confirmation order",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

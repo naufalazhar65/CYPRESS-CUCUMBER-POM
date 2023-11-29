@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Add Product to Cart",
+    "line": 1,
+    "id": "add-product-to-cart",
+    "tags": [],
+    "uri": "AddToCartTest.feature",
+    "elements": [
+      {
+        "id": "add-product-to-cart;add-product-to-cart",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add Product to Cart",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 2427000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user adds a product to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should see the added product in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

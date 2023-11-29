@@ -13,6 +13,7 @@ Then('the user should see the site logo', () => {
 
 And('the user should see the navigation menu', () => {
 	homePage.verifyNavigationMenu()
+	homePage.verifyNavbarVertical()
 })
 
 And('the user should see featured products', () => {

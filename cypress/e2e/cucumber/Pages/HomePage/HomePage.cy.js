@@ -10,7 +10,41 @@ class HomePage {
 	}
 
 	verifyNavigationMenu() {
-		cy.get('#entry_217831 > .entry-section').should('be.visible')
+		cy.get('.navbar-nav')
+			.should('be.visible')
+			.find('li')
+			.and('contain', 'Home')
+			.and('contain', 'Special')
+			.and('contain', 'Blog')
+			.and('contain', 'Mega Menu')
+			.and('contain', 'AddOns')
+			.and('contain', 'My account')
+	}
+
+	verifyNavbarVertical() {
+		cy.contains('Shop by Category')
+			.should('be.visible')
+			.click({ force: true })
+		cy.contains('Top categories ').should('be.visible')
+		cy.get('.vertical')
+			.should('be.visible')
+			.find('.nav-item')
+			.and('contain', 'Components')
+			.and('contain', 'Cameras')
+			.and('contain', 'Phone, Tablets & Ipod')
+			.and('contain', 'Software')
+			.and('contain', 'MP3 Players')
+			.and('contain', 'Laptops & Notebooks')
+			.and('contain', 'Desktops and Monitors')
+			.and('contain', 'Printers & Scanners')
+			.and('contain', 'Mice and Trackballs')
+			.and('contain', 'Fashion and Accessories')
+			.and('contain', 'Beauty and Saloon')
+			.and('contain', 'Autoparts and Accessories')
+			.and('contain', 'Washing machine')
+			.and('contain', 'Gaming consoles')
+			.and('contain', 'Air conditioner')
+			.and('contain', 'Web Cameras')
 	}
 
 	verifyFeaturedProducts() {
@@ -45,6 +79,15 @@ class HomePage {
 		cy.title().should('eq', 'HTC Touch HD')
 	}
 	verifyProductDetails() {
+		cy.get('.content-extra')
+			.should('be.visible')
+			.find('ul li')
+			.and('contain', 'Brand:')
+			.and('contain', 'HTC')
+			.and('contain', 'Viewed:')
+			.and('contain', 'Availability:')
+			.and('contain', 'In Stock')
+
 		cy.get('#entry_216807 > .entry-section').should('be.visible')
 		cy.get('.h3').should('be.visible').and('have.text', 'HTC Touch HD')
 		cy.get(
@@ -112,9 +155,16 @@ class HomePage {
 	verifyShoppingCartPageRedirect() {
 		/// cy.get('.product-action').find('.cart-107').first().click({ force: true });
 		cy.get('#checkout-cart').should('be.visible')
+		cy.title().should('eq', 'Shopping Cart')
+		cy.url().should('include', '/cart')
 	}
 
 	verifyAddedProductsInCart() {
+		cy.get('.row')
+			.should('be.visible')
+			.find('h1')
+			.and('contain', 'Shopping Cart')
+
 		cy.get('.table-responsive')
 			.find('thead tr')
 			.should('contain', 'Image')
@@ -123,6 +173,24 @@ class HomePage {
 			.and('contain', 'Quantity')
 			.and('contain', 'Unit Price')
 			.and('contain', 'Total')
+
+		cy.get('.table-bordered')
+			.should('be.visible')
+			.find('tbody tr')
+			.and('have.length', 5)
+			.should('contain', 'Sub-Total:')
+			.and('contain', '$120.00')
+			.and('contain', 'Eco Tax (-2.00):')
+			.and('contain', '$2.00')
+			.and('contain', '$146.00')
+
+		cy.get('#accordion')
+			.should('be.visible')
+			.find('h5')
+			.and('have.length', 3)
+			.and('contain', 'Use Coupon Code')
+			.and('contain', 'Estimate Shipping & Taxes')
+			.and('contain', 'Use Gift Certificate ')
 	}
 }
 
