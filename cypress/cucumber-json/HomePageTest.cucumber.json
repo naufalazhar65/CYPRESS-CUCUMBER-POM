@@ -1,5 +1,6 @@
 [
   {
+    "description": "    As a user, I want to verify elements and functionalities on the home page.",
     "keyword": "Feature",
     "name": "Home Page Test",
     "line": 1,
@@ -10,59 +11,64 @@
       {
         "id": "home-page-test;verify-elements-on-home-page",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 8,
         "name": "Verify Elements on Home Page",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 7
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 4379000000
+              "duration": 6518000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 9,
             "name": "the user should see the site logo",
             "result": {
               "status": "passed",
-              "duration": 17000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user should see the navigation menu",
-            "result": {
-              "status": "passed",
-              "duration": 304000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user should see featured products",
-            "result": {
-              "status": "passed",
-              "duration": 27000000
+              "duration": 21000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
+            "name": "the user should see the navigation menu",
+            "result": {
+              "status": "passed",
+              "duration": 313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user should see featured products",
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
             "name": "the user should see the footer",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 3000000
             }
           }
         ]
@@ -70,86 +76,41 @@
       {
         "id": "home-page-test;navigate-to-login-page",
         "keyword": "Scenario",
-        "line": 12,
+        "line": 15,
         "name": "Navigate to Login Page",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 14
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 5421000000
+              "duration": 6129000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 16,
             "name": "the user clicks on the \"Login\" link",
             "result": {
               "status": "passed",
-              "duration": 2126000000
+              "duration": 827000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 17,
             "name": "the user should be redirected to the login page",
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the user should see the login form",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "home-page-test;navigate-to-product-details-page",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Navigate to Product Details Page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "the user is on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 4807000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "the user clicks on a featured product",
-            "result": {
-              "status": "passed",
-              "duration": 1923000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "the user should be redirected to the product details page",
             "result": {
               "status": "passed",
               "duration": 7000000
@@ -158,11 +119,66 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 18,
+            "name": "the user should see the login form",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-test;navigate-to-product-details-page",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Navigate to Product Details Page",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 5289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the user clicks on a featured product",
+            "result": {
+              "status": "passed",
+              "duration": 4139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user should be redirected to the product details page",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
             "name": "the user should see product details",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 59000000
             }
           }
         ]
@@ -170,59 +186,64 @@
       {
         "id": "home-page-test;search-for-a-product",
         "keyword": "Scenario",
-        "line": 23,
+        "line": 27,
         "name": "Search for a Product",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 26
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 4275000000
+              "duration": 3451000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
+            "line": 28,
             "name": "the user enters a search query",
             "result": {
               "status": "passed",
-              "duration": 762000000
+              "duration": 814000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 29,
             "name": "the user clicks the search button",
             "result": {
               "status": "passed",
-              "duration": 3693000000
+              "duration": 4637000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 30,
             "name": "the user should see search results",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 43000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 31,
             "name": "the user should be able to navigate to a product from the search results",
             "result": {
               "status": "passed",
-              "duration": 1619000000
+              "duration": 1678000000
             }
           }
         ]
@@ -230,49 +251,52 @@
       {
         "id": "home-page-test;view-shopping-cart",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 34,
         "name": "View Shopping Cart",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 33
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 4563000000
+              "duration": 5614000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 30,
+            "line": 35,
             "name": "the user clicks on the shopping cart icon",
             "result": {
-              "status": "passed",
-              "duration": 7388000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 10000ms: expected '<span.badge.badge-pill.badge-info.cart-item-total>' to contain '1'\n    at HomePage.clickShoppingCartIcon (cypress/e2e/cucumber/Pages/HomePage/HomePage.cy.js:143:4)\n    at Context.eval (cypress/e2e/cucumber/Tests/HomePageTest/HomePageTest.cy.js:75:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 31,
+            "line": 36,
             "name": "the user should be redirected to the shopping cart page",
             "result": {
-              "status": "passed",
-              "duration": 31000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 37,
             "name": "the user should see the added products in the cart",
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped"
             }
           }
         ]

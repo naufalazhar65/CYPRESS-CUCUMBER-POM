@@ -1,5 +1,6 @@
 [
   {
+    "description": "    As a user, I want to register on the website with valid and invalid data.",
     "keyword": "Feature",
     "name": "User Registration",
     "line": 1,
@@ -10,19 +11,24 @@
       {
         "id": "user-registration;successful-registration",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 8,
         "name": "Successful registration",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 7
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 3141000000
+              "duration": 4290000000
             }
           },
           {
@@ -53,21 +59,22 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 9,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 4721000000
+              "duration": 2567000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 12,
             "name": "the user should be redirected to the dashboard",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "failed",
+              "duration": 10015000000,
+              "error_message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: ' Your Account Has Been Created!' but never did.\n    at RegisterPage.verifySuccessfulRegistration (cypress/e2e/cucumber/Pages/RegisterPage/RegisterPage.cy.js:66:12)\n    at Context.eval (cypress/e2e/cucumber/Tests/RegisterTest/RegisterTest.cy.js:26:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]
@@ -75,19 +82,24 @@
       {
         "id": "user-registration;registration-with-existing-email",
         "keyword": "Scenario",
-        "line": 12,
+        "line": 15,
         "name": "Registration with existing email",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 14
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 1558000000
+              "duration": 1024000000
             }
           },
           {
@@ -118,21 +130,91 @@
               }
             ],
             "keyword": "When ",
-            "line": 13,
+            "line": 16,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 3654000000
+              "duration": 2519000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
+            "line": 19,
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-with-weak-password",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Registration with weak password",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 1093000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar1@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 23,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 2498000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "an error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
             }
           }
         ]
@@ -140,19 +222,24 @@
       {
         "id": "user-registration;registration-with-mismatched-passwords",
         "keyword": "Scenario",
-        "line": 24,
+        "line": 29,
         "name": "Registration with mismatched passwords",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 28
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 1088000000
+              "duration": 1576000000
             }
           },
           {
@@ -183,21 +270,21 @@
               }
             ],
             "keyword": "When ",
-            "line": 25,
+            "line": 30,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 2506000000
+              "duration": 2675000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 28,
+            "line": 33,
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 10000000
             }
           }
         ]

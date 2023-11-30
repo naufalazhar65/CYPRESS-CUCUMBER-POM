@@ -1,9 +1,11 @@
 Feature: Change User Password
+    As a logged-in user, I want to change my password.
 
     Background:
         Given the user is logged in
         And the user is on the change password page
 
+    @regression
     Scenario: Change Password
         When the user enters the current password and sets a new password
             | NewPassword | ConfirmNewPassword |

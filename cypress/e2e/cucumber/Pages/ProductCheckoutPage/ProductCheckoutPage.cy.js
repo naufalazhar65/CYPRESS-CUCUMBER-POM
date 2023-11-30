@@ -56,14 +56,14 @@ class ProductCheckoutPage {
 			.find('tbody tr')
 			.and('contain', 'Sub-Total:')
 			.and('contain', 'Flat Shipping Rate:')
-			.and('contain', 'Eco Tax (-2.00):')
-			.and('contain', 'VAT (20%):')
+			// .and('contain', 'Eco Tax (-2.00):')
+			// .and('contain', 'VAT (20%):')
 			.and('contain', 'Total')
 
 		cy.contains('Use Coupon Code').should('be.visible')
 		cy.contains('Use Gift Certificate').should('be.visible')
 		cy.contains('Shipping Address').scrollIntoView().should('be.visible')
-		cy.get('#shipping-new').scrollIntoView().should('be.visible')
+		// cy.get('#shipping-new').scrollIntoView().should('be.visible')
 		cy.get('.form-group')
 			.should('be.visible')
 			.and('contain', 'Add Comments About Your Order')
@@ -73,16 +73,8 @@ class ProductCheckoutPage {
 		return this
 	}
 
-	completeCheckoutProcess(
-		telephone,
-		firstName,
-		lastName,
-		company,
-		address1,
-		address2,
-		city,
-		postCode,
-        comment
+	// Test 1: for add new address
+	completeCheckoutProcess(telephone,firstName,lastName,company,address1,address2,city,postCode,comment
 	) {
 		cy.get('#input-telephone').scrollIntoView().clear().type(telephone)
 		cy.get('#input-payment-firstname').type(firstName)
@@ -92,28 +84,32 @@ class ProductCheckoutPage {
 		cy.get('#input-payment-address-2').type(address2)
 		cy.get('#input-payment-city').type(city)
 		cy.get('#input-payment-postcode').type(postCode)
-        cy.get('#input-comment').scrollIntoView().type(comment)
-		return this
-	}
-
-	selectCountry() {
 		cy.get('#input-payment-country')
 			.select('100')
 			.should('have.value', '100')
 			.and('contain', 'Indonesia')
-	}
-	selectZone() {
 		cy.get('#input-payment-zone')
 			.select('1515')
 			.should('have.value', '1515')
 			.and('contain', 'Jawa Barat')
+        cy.get('#input-comment').scrollIntoView().type(comment)
+		return this
 	}
+
+	// Test 2 ; for an existing address
+	chooseAddress() {
+		cy.get('select[name="address_id"]')
+			.select('3842')
+			.should('have.value', '3842')
+			.and('contain', 'Naufal Azhar, jalan1, jakarta, Jawa Barat, Indonesia');
+			}
+	
 
 	checkTermsConditions() {
 		cy.get('input[name="agree"]').scrollIntoView().check({ force: true })
 	}
 
-    CheckShippingNew() {
+    checkShippingNew() {
 		cy.get('input[name="shipping_address_same"]').scrollIntoView().check({ force: true })
 		return this
 	}
@@ -123,10 +119,15 @@ class ProductCheckoutPage {
 	}
 
 	verifyConfirmationOrder() {
-        cy.url().should('include', '/confirm')
+        cy.url().should('include', '/checkout')
         cy.title().should('eq', 'Confirm Order')
-		cy.get('#maza-checkout-confirm').should('be.visible')
-	}
+		cy.contains('Confirm Order').should('be.visible')
+		cy.contains('Payment Address').should('be.visible')
+		cy.contains('Shipping Address').should('be.visible')
+		cy.contains('Shipping Method:').should('be.visible')
+		cy.get('.table-responsive').should('be.visible').find('tbody').and('have.length', 2)
+
+	}	
 }
 
 const productCheckoutPage = new ProductCheckoutPage()

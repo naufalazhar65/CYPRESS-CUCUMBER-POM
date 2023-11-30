@@ -1,9 +1,11 @@
 Feature: Edit User Profile
+    As a logged-in user, I want to edit my profile details
 
     Background:
         Given the user is logged in
         And the user is on the edit user page
 
+    @regression
     Scenario: Edit User Profile
         When the user updates their profile with the following details
             | FirstName | LastName | Email                   | Telephone |

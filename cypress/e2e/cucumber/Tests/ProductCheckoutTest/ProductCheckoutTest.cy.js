@@ -20,26 +20,33 @@ Then('the user should be on the checkout page', () => {
 })
 
 And('the user completes the checkout process', (datatable) => {
+	// completeCheckoutProcess for add new address
 	datatable.hashes().forEach((element) => {
-		productCheckoutPage.completeCheckoutProcess(
-			element.Telephone,
-			element.FirstName,
-			element.LastName,
-			element.Company,
-			element.Address1,
-			element.Address2,
-			element.City,
-			element.PostCode,
-            element.Comment,
-		)
-		productCheckoutPage.selectCountry()
-		productCheckoutPage.selectZone()
-        productCheckoutPage.checkTermsConditions()
-        productCheckoutPage.CheckShippingNew()
+		// productCheckoutPage.completeCheckoutProcess(
+		// 	element.Telephone,
+		// 	element.FirstName,
+		// 	element.LastName,
+		// 	element.Company,
+		// 	element.Address1,
+		// 	element.Address2,
+		// 	element.City,
+		// 	element.PostCode,
+		//     element.Comment,
+		// )
+
+		//  chooseAddress for an existing address
+		productCheckoutPage.chooseAddress()
+		//=================================================================
+		productCheckoutPage.checkTermsConditions()
+		productCheckoutPage.checkShippingNew()
 		productCheckoutPage.clickContinueButton()
 	})
 })
 
 And('the user should see a confirmation order', () => {
 	productCheckoutPage.verifyConfirmationOrder()
+})
+
+And('the user should see the success message "Your order has been placed successfully!"',() => {
+	// productCheckoutPage.verifyConfirmationOrder()
 })

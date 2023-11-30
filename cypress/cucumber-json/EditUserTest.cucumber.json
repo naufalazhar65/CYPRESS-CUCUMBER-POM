@@ -1,5 +1,6 @@
 [
   {
+    "description": "    As a logged-in user, I want to edit my profile details",
     "keyword": "Feature",
     "name": "Edit User Profile",
     "line": 1,
@@ -10,29 +11,34 @@
       {
         "id": "edit-user-profile;edit-user-profile",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 9,
         "name": "Edit User Profile",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 8
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is logged in",
             "result": {
               "status": "passed",
-              "duration": 8628000000
+              "duration": 7105000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 5,
+            "line": 6,
             "name": "the user is on the edit user page",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 8000000
             }
           },
           {
@@ -59,31 +65,31 @@
               }
             ],
             "keyword": "When ",
-            "line": 8,
+            "line": 10,
             "name": "the user updates their profile with the following details",
             "result": {
               "status": "passed",
-              "duration": 1483000000
+              "duration": 1449000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 13,
             "name": "the user clicks the \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 917000000
+              "duration": 1109000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 14,
             "name": "the user should see a success message",
             "result": {
               "status": "passed",
-              "duration": 765000000
+              "duration": 1116000000
             }
           },
           {
@@ -110,7 +116,7 @@
               }
             ],
             "keyword": "And ",
-            "line": 13,
+            "line": 15,
             "name": "the user details should be updated",
             "result": {
               "status": "passed",

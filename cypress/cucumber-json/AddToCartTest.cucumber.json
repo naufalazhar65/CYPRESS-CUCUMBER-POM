@@ -1,5 +1,6 @@
 [
   {
+    "description": "  As a user, I want to add a product to the cart and verify its presence.",
     "keyword": "Feature",
     "name": "Add Product to Cart",
     "line": 1,
@@ -10,39 +11,44 @@
       {
         "id": "add-product-to-cart;add-product-to-cart",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 8,
         "name": "Add Product to Cart",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 7
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 2427000000
+              "duration": 5163000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 9,
             "name": "the user adds a product to the cart",
             "result": {
               "status": "passed",
-              "duration": 181000000
+              "duration": 170000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 10,
             "name": "the user should see the added product in the cart",
             "result": {
               "status": "passed",
-              "duration": 390000000
+              "duration": 622000000
             }
           }
         ]
