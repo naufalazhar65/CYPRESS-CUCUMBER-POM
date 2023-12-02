@@ -2,7 +2,7 @@ class ChangePasswordPage {
 	loginURL() {
 		cy.visit('/index.php?route=account/login')
 		cy.get('#input-email').type('naufalazhar354@gmail.com')
-		cy.get('#input-password').type('naufal15')
+		cy.get('#input-password').type('naufal20')
 		cy.get('form > .btn').click()
 	}
 
@@ -43,7 +43,7 @@ class ChangePasswordPage {
 	loginWithNewPassword() {
 		cy.visit('/index.php?route=account/login')
 		cy.get('#input-email').type('naufalazhar354@gmail.com')
-		cy.get('#input-password').type('naufal16')
+		cy.get('#input-password').type('naufal21')
 		cy.get('form > .btn').click()
 	}
     

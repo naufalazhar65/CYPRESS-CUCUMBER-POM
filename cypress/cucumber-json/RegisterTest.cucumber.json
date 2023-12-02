@@ -28,7 +28,7 @@
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 4290000000
+              "duration": 3361000000
             }
           },
           {
@@ -49,7 +49,7 @@
                     "cells": [
                       "Naufal",
                       "Azhar",
-                      "naufalazhar30@gmail.com",
+                      "naufalazhar34@gmail.com",
                       "1234567890",
                       "password123",
                       "password123"
@@ -63,7 +63,7 @@
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 2567000000
+              "duration": 3417000000
             }
           },
           {
@@ -72,9 +72,8 @@
             "line": 12,
             "name": "the user should be redirected to the dashboard",
             "result": {
-              "status": "failed",
-              "duration": 10015000000,
-              "error_message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: ' Your Account Has Been Created!' but never did.\n    at RegisterPage.verifySuccessfulRegistration (cypress/e2e/cucumber/Pages/RegisterPage/RegisterPage.cy.js:66:12)\n    at Context.eval (cypress/e2e/cucumber/Tests/RegisterTest/RegisterTest.cy.js:26:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 9000000
             }
           }
         ]
@@ -99,7 +98,7 @@
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 1024000000
+              "duration": 759000000
             }
           },
           {
@@ -120,7 +119,7 @@
                     "cells": [
                       "Naufal",
                       "Azhar",
-                      "naufalazhar30@gmail.com",
+                      "naufalazhar34@gmail.com",
                       "1234567890",
                       "password123",
                       "password123"
@@ -134,7 +133,7 @@
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 2519000000
+              "duration": 2325000000
             }
           },
           {
@@ -144,77 +143,7 @@
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-registration;registration-with-weak-password",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "Registration with weak password",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 21
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user is on the registration page",
-            "result": {
-              "status": "passed",
-              "duration": 1093000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "FirstName",
-                      "LastName",
-                      "Email",
-                      "Telephone",
-                      "Password",
-                      "ConfirmPassword"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Naufal",
-                      "Azhar",
-                      "naufalazhar1@gmail.com",
-                      "1234567890",
-                      "password123",
-                      "password123"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 23,
-            "name": "the user registers with the following details:",
-            "result": {
-              "status": "passed",
-              "duration": 2498000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "an error message should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 11000000
+              "duration": 3000000
             }
           }
         ]
@@ -225,6 +154,10 @@
         "line": 29,
         "name": "Registration with mismatched passwords",
         "tags": [
+          {
+            "name": "@regression",
+            "line": 21
+          },
           {
             "name": "@regression",
             "line": 28
@@ -239,7 +172,7 @@
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 1576000000
+              "duration": 1066000000
             }
           },
           {
@@ -274,7 +207,7 @@
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 2675000000
+              "duration": 2543000000
             }
           },
           {
@@ -284,7 +217,7 @@
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 8000000
             }
           }
         ]

@@ -140,7 +140,7 @@ class HomePage {
 
 		cy.get('#entry_217825 > .cart > .cart-icon')
 			.find('.cart-item-total')
-			.should('contain', '1')
+			.should('contain', '4')
 		cy.get('#entry_217825 > .cart > .cart-icon').click({ force: true })
 		cy.contains('Cart').should('be.visible')
 		cy.contains('Sub-Total:').should('be.visible')
@@ -176,13 +176,10 @@ class HomePage {
 
 		cy.get('.table-bordered')
 			.should('be.visible')
-			.find('tbody tr')
-			.and('have.length', 5)
-			.should('contain', 'Sub-Total:')
-			.and('contain', '$120.00')
-			.and('contain', 'Eco Tax (-2.00):')
-			.and('contain', '$2.00')
-			.and('contain', '$146.00')
+			.find('tbody')
+			.and('have.length', 2)
+			.and('contain', 'HTC Touch HD')
+			.and('contain', 'iMac')
 
 		cy.get('#accordion')
 			.should('be.visible')

@@ -734,18 +734,25 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
+                        <i class="fa fa-tag fa-lg"></i>
+                        
+                            <span class="tag">@regression</span>
+                        
+                    
                 
             </div>
             <h1>Feature:
-                <small>I want to login into the site with valid data</small>
+                <small>Edit User Profile</small>
             </h1>
             
                 <p>
+                    <strong>Description: </strong>     As a logged-in user, I want to edit my profile details </p>
+                
                <p><strong>File name:</strong>
-                    LoginTest.feature
+                    EditUserTest.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    LoginTest.feature</p>
+                    EditUserTest.feature</p>
             
         </div>
 
@@ -783,7 +790,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">1</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -931,10 +938,15 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@regression</span>
+                            
+                        
                     
                 </div>
 
-                <h2>Scenario: <small>Login as new sign up user with valid data</small></h2>
+                <h2>Scenario: <small>Edit User Profile</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -951,7 +963,7 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
                         </li>
                     
 
@@ -981,7 +993,67 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I navigate to the Website
+                                        the user is logged in
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the user is on the edit user page
                                         
                                     
 
@@ -1041,7 +1113,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        I entered valid credential
+                                        the user updates their profile with the following details
                                         
                                     
 
@@ -1089,19 +1161,27 @@ input#darkCheck:checked ~ label>svg#moon {
                                             <tr>
                                                 
                                                 
-                                                    <th>email</th>
+                                                    <th>FirstName</th>
                                                 
-                                                    <th>password</th>
+                                                    <th>LastName</th>
+                                                
+                                                    <th>Email</th>
+                                                
+                                                    <th>Telephone</th>
                                                 
                                             </tr>
 
                                             
                                                 <tr>
                                                     
+                                                    
+                                                        <td>Naufal</td>
+                                                    
+                                                        <td>Azhar</td>
                                                     
                                                         <td>naufalazhar65@gmail.com</td>
                                                     
-                                                        <td>naufal354</td>
+                                                        <td>123456789</td>
                                                     
                                                 </tr>
                                             
@@ -1130,7 +1210,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        User click on sign in button
+                                        the user clicks the "Continue" button
                                         
                                     
 
@@ -1190,114 +1270,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        Validate the title after login
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Login with invalid credentials</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
-                        </li>
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        I navigate to the Website
+                                        the user should see a success message
                                         
                                     
 
@@ -1354,10 +1327,10 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">When </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        I entered invalid credential
+                                        the user details should be updated
                                         
                                     
 
@@ -1405,9 +1378,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                             <tr>
                                                 
                                                 
-                                                    <th>email</th>
+                                                    <th>FirstName</th>
                                                 
-                                                    <th>password</th>
+                                                    <th>LastName</th>
+                                                
+                                                    <th>Email</th>
+                                                
+                                                    <th>Telephone</th>
                                                 
                                             </tr>
 
@@ -1415,9 +1392,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                                 <tr>
                                                     
                                                     
-                                                        <td>invalidUsername</td>
+                                                        <td>Naufal</td>
                                                     
-                                                        <td>invali</td>
+                                                        <td>Azhar</td>
+                                                    
+                                                        <td>naufalazhar65@gmail.com</td>
+                                                    
+                                                        <td>123456789</td>
                                                     
                                                 </tr>
                                             
@@ -1426,126 +1407,6 @@ input#darkCheck:checked ~ label>svg#moon {
                                 </div>
 
                                 
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        User click on sign in button
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        Validate the error message for invalid login
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
                             
                         
 
@@ -1607,7 +1468,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            2,
+                            1,
                             0,
                             0,
                             0,

@@ -28,7 +28,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 8321000000
+              "duration": 10179000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user selects a product",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 49000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "adds the product to the wishlist",
             "result": {
               "status": "passed",
-              "duration": 1394000000
+              "duration": 3147000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "the user should be redirected to the wishlist page",
             "result": {
               "status": "passed",
-              "duration": 1653000000
+              "duration": 804000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "the user should see the added product in the wishlist",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 6000000
             }
           }
         ]
@@ -88,7 +88,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 5244000000
+              "duration": 6659000000
             }
           },
           {
@@ -98,7 +98,7 @@
             "name": "the user is on the wishlist page",
             "result": {
               "status": "passed",
-              "duration": 1086000000
+              "duration": 1236000000
             }
           },
           {
@@ -108,7 +108,7 @@
             "name": "removes the product from the wishlist",
             "result": {
               "status": "passed",
-              "duration": 848000000
+              "duration": 980000000
             }
           },
           {
@@ -118,7 +118,7 @@
             "name": "the product should be removed from the wishlist",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           },
           {
@@ -128,7 +128,7 @@
             "name": "a success message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 5000000
             }
           }
         ]

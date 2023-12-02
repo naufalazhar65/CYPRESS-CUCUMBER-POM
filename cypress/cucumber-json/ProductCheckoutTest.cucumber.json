@@ -28,7 +28,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 8317000000
+              "duration": 8423000000
             }
           },
           {
@@ -37,8 +37,9 @@
             "line": 9,
             "name": "the user adds a product to the cart",
             "result": {
-              "status": "passed",
-              "duration": 1679000000
+              "status": "failed",
+              "duration": 12965000000,
+              "error_message": "AssertionError: Timed out retrying after 10000ms: expected '<h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-secondary.text-secondary-inverse>' to be 'visible'\n\nThis element `<h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-secondary.text-secondary-inverse>` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?\n    at ProductCheckoutPage.addProductToCart (cypress/e2e/cucumber/Pages/ProductCheckoutPage/ProductCheckoutPage.cy.js:15:22)\n    at Context.eval (cypress/e2e/cucumber/Tests/ProductCheckoutTest/ProductCheckoutTest.cy.js:10:21)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -47,8 +48,7 @@
             "line": 10,
             "name": "the user proceeds to checkout",
             "result": {
-              "status": "passed",
-              "duration": 2210000000
+              "status": "skipped"
             }
           },
           {
@@ -57,8 +57,7 @@
             "line": 11,
             "name": "the user should be on the checkout page",
             "result": {
-              "status": "passed",
-              "duration": 311000000
+              "status": "skipped"
             }
           },
           {
@@ -98,8 +97,7 @@
             "line": 12,
             "name": "the user completes the checkout process",
             "result": {
-              "status": "passed",
-              "duration": 374000000
+              "status": "skipped"
             }
           },
           {
@@ -108,8 +106,7 @@
             "line": 15,
             "name": "the user should see a confirmation order",
             "result": {
-              "status": "passed",
-              "duration": 2830000000
+              "status": "skipped"
             }
           }
         ]

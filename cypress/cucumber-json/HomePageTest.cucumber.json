@@ -28,7 +28,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 6518000000
+              "duration": 5772000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "the user should see the navigation menu",
             "result": {
               "status": "passed",
-              "duration": 313000000
+              "duration": 260000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "the user should see featured products",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 23000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "the user should see the footer",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           }
         ]
@@ -93,7 +93,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 6129000000
+              "duration": 5343000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "the user clicks on the \"Login\" link",
             "result": {
               "status": "passed",
-              "duration": 827000000
+              "duration": 1840000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "the user should be redirected to the login page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 3000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "the user should see the login form",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 5000000
             }
           }
         ]
@@ -148,7 +148,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 5289000000
+              "duration": 3650000000
             }
           },
           {
@@ -158,7 +158,7 @@
             "name": "the user clicks on a featured product",
             "result": {
               "status": "passed",
-              "duration": 4139000000
+              "duration": 2987000000
             }
           },
           {
@@ -168,7 +168,7 @@
             "name": "the user should be redirected to the product details page",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 5000000
             }
           },
           {
@@ -178,7 +178,7 @@
             "name": "the user should see product details",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 25000000
             }
           }
         ]
@@ -203,7 +203,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 3451000000
+              "duration": 3674000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "the user enters a search query",
             "result": {
               "status": "passed",
-              "duration": 814000000
+              "duration": 794000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "the user clicks the search button",
             "result": {
               "status": "passed",
-              "duration": 4637000000
+              "duration": 4534000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "the user should see search results",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 16000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "the user should be able to navigate to a product from the search results",
             "result": {
               "status": "passed",
-              "duration": 1678000000
+              "duration": 3062000000
             }
           }
         ]
@@ -268,7 +268,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 5614000000
+              "duration": 3562000000
             }
           },
           {
@@ -277,8 +277,8 @@
             "line": 35,
             "name": "the user clicks on the shopping cart icon",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 10000ms: expected '<span.badge.badge-pill.badge-info.cart-item-total>' to contain '1'\n    at HomePage.clickShoppingCartIcon (cypress/e2e/cucumber/Pages/HomePage/HomePage.cy.js:143:4)\n    at Context.eval (cypress/e2e/cucumber/Tests/HomePageTest/HomePageTest.cy.js:75:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 8189000000
             }
           },
           {
@@ -287,7 +287,8 @@
             "line": 36,
             "name": "the user should be redirected to the shopping cart page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
             }
           },
           {
@@ -296,7 +297,8 @@
             "line": 37,
             "name": "the user should see the added products in the cart",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 42000000
             }
           }
         ]
