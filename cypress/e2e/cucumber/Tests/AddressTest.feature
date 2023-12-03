@@ -19,6 +19,6 @@ Feature: Address Management
             | FirstName | LastName | Company    | EditedAddress1 | Address2 | City    | PostCode |
             | Naufal    | Azhar    | Pt.mamkmur | tangerang      | jalan2   | jakarta | 1234     |
 
-Scenario: Delete Address
-    When the user deletes an existing address
-    Then the address should be removed from the address list
+    Scenario: Delete Address
+        When the user deletes an existing address
+        Then the address should be removed from the address list
