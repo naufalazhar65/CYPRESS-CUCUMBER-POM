@@ -23,7 +23,7 @@
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 4848000000
+              "duration": 5094000000
             }
           },
           {
@@ -60,7 +60,7 @@
             "name": "the user adds a new address with valid details",
             "result": {
               "status": "passed",
-              "duration": 4220000000
+              "duration": 4358000000
             }
           },
           {
@@ -70,7 +70,7 @@
             "name": "the new address should be visible in the address list",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 24000000
             }
           }
         ]
@@ -90,7 +90,7 @@
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 4104000000
+              "duration": 3490000000
             }
           },
           {
@@ -99,13 +99,13 @@
                 "rows": [
                   {
                     "cells": [
-                      "FirstName",
-                      "LastName",
-                      "Company",
-                      "EditedAddress1",
-                      "Address2",
-                      "City",
-                      "PostCode"
+                      "EditFirstName",
+                      "EditLastName",
+                      "EditCompany",
+                      "EditAddress1",
+                      "EditAddress2",
+                      "EditCity",
+                      "EditPostCode"
                     ]
                   },
                   {
@@ -127,7 +127,7 @@
             "name": "the user edits an existing address",
             "result": {
               "status": "passed",
-              "duration": 2914000000
+              "duration": 3074000000
             }
           },
           {
@@ -137,7 +137,7 @@
             "name": "updates the address details",
             "result": {
               "status": "passed",
-              "duration": 1098000000
+              "duration": 1067000000
             }
           },
           {
@@ -146,13 +146,13 @@
                 "rows": [
                   {
                     "cells": [
-                      "FirstName",
-                      "LastName",
-                      "Company",
+                      "EditedFirstName",
+                      "EditedLastName",
+                      "EditedCompany",
                       "EditedAddress1",
-                      "Address2",
-                      "City",
-                      "PostCode"
+                      "EditedAddress2",
+                      "EditedCity",
+                      "EditedPostCode"
                     ]
                   },
                   {
@@ -174,7 +174,7 @@
             "name": "the changes should be reflected in the address list",
             "result": {
               "status": "passed",
-              "duration": 478000000
+              "duration": 773000000
             }
           }
         ]
@@ -194,7 +194,7 @@
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 3373000000
+              "duration": 3772000000
             }
           },
           {
@@ -204,7 +204,7 @@
             "name": "the user deletes an existing address",
             "result": {
               "status": "passed",
-              "duration": 818000000
+              "duration": 908000000
             }
           },
           {
@@ -214,7 +214,7 @@
             "name": "the address should be removed from the address list",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 15000000
             }
           }
         ]

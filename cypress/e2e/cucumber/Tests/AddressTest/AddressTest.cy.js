@@ -29,13 +29,13 @@ Then('the new address should be visible in the address list', () => {
 When('the user edits an existing address', (datatable) => {
     datatable.hashes().forEach((element) => {
 		addressPage.editAddress(
-			element.FirstName,
-			element.LastName,
-			element.Company,
-			element.EditedAddress1,
-			element.Address2,
-			element.City,
-			element.PostCode,
+			element.EditFirstName,
+			element.EditLastName,
+			element.EditCompany,
+			element.EditAddress1,
+			element.EditAddress2,
+			element.EditCity,
+			element.EditPostCode,
 		)
 
 	})
@@ -48,13 +48,13 @@ And('updates the address details', () => {
 Then('the changes should be reflected in the address list', (datatable) => {
     datatable.hashes().forEach((element) => {
 		addressPage.verifyUserAddressEdited(
-			element.FirstName,
-			element.LastName,
-			element.Company,
+			element.EditedFirstName,
+			element.EditedLastName,
+			element.EditedCompany,
 			element.EditedAddress1,
-			element.Address2,
-			element.City,
-			element.PostCode,
+			element.EditedAddress2,
+			element.EditedCity,
+			element.EditedPostCode,
 		)
 	})    
 });

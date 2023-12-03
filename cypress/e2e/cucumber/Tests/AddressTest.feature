@@ -12,12 +12,12 @@ Feature: Address Management
 
     Scenario: Edit Address
         When the user edits an existing address
-            | FirstName | LastName | Company    | EditedAddress1 | Address2 | City    | PostCode |
-            | Naufal    | Azhar    | Pt.mamkmur | tangerang      | jalan2   | jakarta | 1234     |
+            | EditFirstName | EditLastName | EditCompany | EditAddress1 | EditAddress2 | EditCity | EditPostCode |
+            | Naufal        | Azhar        | Pt.mamkmur  | tangerang     | jalan2       | jakarta  | 1234         |
         And updates the address details
         Then the changes should be reflected in the address list
-            | FirstName | LastName | Company    | EditedAddress1 | Address2 | City    | PostCode |
-            | Naufal    | Azhar    | Pt.mamkmur | tangerang      | jalan2   | jakarta | 1234     |
+            | EditedFirstName | EditedLastName | EditedCompany | EditedAddress1 | EditedAddress2 | EditedCity | EditedPostCode |
+            | Naufal          | Azhar          | Pt.mamkmur    | tangerang      | jalan2         | jakarta    | 1234           |
 
     Scenario: Delete Address
         When the user deletes an existing address

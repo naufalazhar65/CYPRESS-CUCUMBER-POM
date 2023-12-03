@@ -34,15 +34,15 @@ class AddressPage {
         cy.get('.table-responsive').find('tbody tr').should('be.visible').and('have.length', 2)
         }
 
-    editAddress(firstName,lastName,company,editAddress1,address2,city,postCode) {
+    editAddress(editFirstName,EditLastName,EditCompany,EditAddress1,EditAddress2,EditCity,EditPostCode) {
         cy.get(':nth-child(1) > .text-right > .btn-info').click()
-        cy.get('#input-firstname').clear().type(firstName)
-        cy.get('#input-lastname').clear().type(lastName)
-        cy.get('#input-company').clear().type(company)
-        cy.get('#input-address-1').clear().type(editAddress1)
-        cy.get('#input-address-2').clear().type(address2)
-        cy.get('#input-city').clear().type(city)
-        cy.get('#input-postcode').clear().type(postCode)
+        cy.get('#input-firstname').clear().type(editFirstName)
+        cy.get('#input-lastname').clear().type(EditLastName)
+        cy.get('#input-company').clear().type(EditCompany)
+        cy.get('#input-address-1').clear().type(EditAddress1)
+        cy.get('#input-address-2').clear().type(EditAddress2)
+        cy.get('#input-city').clear().type(EditCity)
+        cy.get('#input-postcode').clear().type(EditPostCode)
         cy.get('#input-country')
             .select('100')
             .should('have.value', '100')
@@ -59,9 +59,9 @@ class AddressPage {
         cy.get('.float-right > .btn').click()
     }
 
-    verifyUserAddressEdited(firstName,lastName,company,editAddress1,address2,city,postCode) {
+    verifyUserAddressEdited(EditedFirstName,EditedLastName,EditedCompany,EditedAddress1,EditedAddress2,EditedCity,EditedPostCode) {
         cy.get(':nth-child(1) > .text-right > .btn-info').click()
-        cy.get('#input-address-1').should('have.value', editAddress1);
+        cy.get('#input-address-1').should('have.value', EditedAddress1);
     }
 
     deleteAddress() {
