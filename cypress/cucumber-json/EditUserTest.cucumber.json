@@ -28,7 +28,7 @@
             "name": "the user is logged in",
             "result": {
               "status": "passed",
-              "duration": 6960000000
+              "duration": 5814000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "the user updates their profile with the following details",
             "result": {
               "status": "passed",
-              "duration": 1449000000
+              "duration": 1459000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "name": "the user clicks the \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1693000000
+              "duration": 1620000000
             }
           },
           {
@@ -89,7 +89,7 @@
             "name": "the user should see a success message",
             "result": {
               "status": "passed",
-              "duration": 1057000000
+              "duration": 3976000000
             }
           },
           {
@@ -120,7 +120,7 @@
             "name": "the user details should be updated",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 19000000
             }
           }
         ]

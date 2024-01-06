@@ -28,7 +28,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 5314000000
+              "duration": 5752000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user adds a product to the cart",
             "result": {
               "status": "passed",
-              "duration": 156000000
+              "duration": 210000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "the user should see the added product in the cart",
             "result": {
               "status": "passed",
-              "duration": 608000000
+              "duration": 606000000
             }
           }
         ]

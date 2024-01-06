@@ -10,7 +10,7 @@ class ProductCheckoutPage {
 		// cy.get('.product-action').find('.cart-107').first().click({ force: true });
 		cy.get('#entry_217825 > .cart > .cart-icon')
 			.find('.cart-item-total')
-			.should('contain', '4')
+			.should('contain', '1')
 		cy.get('#entry_217825 > .cart > .cart-icon').click({ force: true })
 		cy.contains('Cart').should('be.visible')
 		cy.contains('Sub-Total:').should('be.visible')

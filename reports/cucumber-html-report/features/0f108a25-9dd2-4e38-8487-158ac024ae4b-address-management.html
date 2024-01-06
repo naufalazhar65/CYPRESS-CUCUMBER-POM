@@ -734,25 +734,20 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
-                        <i class="fa fa-tag fa-lg"></i>
-                        
-                            <span class="tag">@smoke</span>
-                        
-                    
                 
             </div>
             <h1>Feature:
-                <small>Product Checkout</small>
+                <small>Address Management</small>
             </h1>
             
                 <p>
-                    <strong>Description: </strong>     As a user, I want to add a product to the cart and complete the checkout process. </p>
+                    <strong>Description: </strong>     As a user, I want to manage my addresses on the website. </p>
                 
                <p><strong>File name:</strong>
-                    ProductCheckoutTest.feature
+                    AddressTest.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    ProductCheckoutTest.feature</p>
+                    AddressTest.feature</p>
             
         </div>
 
@@ -790,7 +785,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">1</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -801,7 +796,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -810,7 +805,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     
                     
                     </tr>
@@ -871,7 +866,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     <i class="fa fa-question-circle not-defined-color fa-lg">
                         <span>question-circle not-defined-color</span>
                     </i>
-                    Sonoma
+                    Mac OS Sonoma
                 </span>
             </li>
             
@@ -938,15 +933,10 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
-                            <i class="fa fa-tag fa-lg"></i>
-                            
-                                <span class="tag">@smoke</span>
-                            
-                        
                     
                 </div>
 
-                <h2>Scenario: <small>Checkout Product</small></h2>
+                <h2>Scenario: <small>Add New Address</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -958,20 +948,12 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">4</span>
-                        </li>
+
                     
 
                     
                         <li>
-                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">1</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
@@ -1001,7 +983,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the user is on the home page
+                                        the user is on the address management page
                                         
                                     
 
@@ -1051,8 +1033,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1061,199 +1043,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user adds a product to the cart
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-                                        <a href="#error0-1-error" data-toggle="collapse">+ Show Error</a>
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-                                <div id="error0-1-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>AssertionError: Timed out retrying after 10000ms: expected '(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-secondary.text-secondary-inverse)' to be 'visible'
-
-This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-secondary.text-secondary-inverse)` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?
-    at ProductCheckoutPage.addProductToCart (cypress/e2e/cucumber/Pages/ProductCheckoutPage/ProductCheckoutPage.cy.js:15:22)
-    at Context.eval (cypress/e2e/cucumber/Tests/ProductCheckoutTest/ProductCheckoutTest.cy.js:10:21)
-    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
-    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</pre>
-                                </div>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        the user proceeds to checkout
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the user should be on the checkout page
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        the user completes the checkout process
+                                        the user adds a new address with valid details
                                         
                                     
 
@@ -1301,8 +1091,6 @@ This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-seconda
                                             <tr>
                                                 
                                                 
-                                                    <th>Telephone</th>
-                                                
                                                     <th>FirstName</th>
                                                 
                                                     <th>LastName</th>
@@ -1317,15 +1105,11 @@ This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-seconda
                                                 
                                                     <th>PostCode</th>
                                                 
-                                                    <th>Comment</th>
-                                                
                                             </tr>
 
                                             
                                                 <tr>
                                                     
-                                                    
-                                                        <td>123456</td>
                                                     
                                                         <td>Naufal</td>
                                                     
@@ -1340,8 +1124,6 @@ This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-seconda
                                                         <td>jakarta</td>
                                                     
                                                         <td>1234</td>
-                                                    
-                                                        <td>hallo</td>
                                                     
                                                 </tr>
                                             
@@ -1360,8 +1142,284 @@ This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-seconda
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        the new address should be visible in the address list
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Edit Address</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        the user is on the address management page
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        the user edits an existing address
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                                <div class="scenario-scroll-bar">
+                                    
+                                        <table class="table arguments">
+                                            
+                                            <tr>
+                                                
+                                                
+                                                    <th>EditFirstName</th>
+                                                
+                                                    <th>EditLastName</th>
+                                                
+                                                    <th>EditCompany</th>
+                                                
+                                                    <th>EditAddress1</th>
+                                                
+                                                    <th>EditAddress2</th>
+                                                
+                                                    <th>EditCity</th>
+                                                
+                                                    <th>EditPostCode</th>
+                                                
+                                            </tr>
+
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>Naufal</td>
+                                                    
+                                                        <td>Azhar</td>
+                                                    
+                                                        <td>Pt.mamkmur</td>
+                                                    
+                                                        <td>tangerang</td>
+                                                    
+                                                        <td>jalan2</td>
+                                                    
+                                                        <td>jakarta</td>
+                                                    
+                                                        <td>1234</td>
+                                                    
+                                                </tr>
+                                            
+                                        </table>
+                                    
+                                </div>
+
+                                
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1370,7 +1428,343 @@ This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-seconda
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        the user should see a confirmation order
+                                        updates the address details
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        the changes should be reflected in the address list
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                                <div class="scenario-scroll-bar">
+                                    
+                                        <table class="table arguments">
+                                            
+                                            <tr>
+                                                
+                                                
+                                                    <th>EditedFirstName</th>
+                                                
+                                                    <th>EditedLastName</th>
+                                                
+                                                    <th>EditedCompany</th>
+                                                
+                                                    <th>EditedAddress1</th>
+                                                
+                                                    <th>EditedAddress2</th>
+                                                
+                                                    <th>EditedCity</th>
+                                                
+                                                    <th>EditedPostCode</th>
+                                                
+                                            </tr>
+
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>Naufal</td>
+                                                    
+                                                        <td>Azhar</td>
+                                                    
+                                                        <td>Pt.mamkmur</td>
+                                                    
+                                                        <td>tangerang</td>
+                                                    
+                                                        <td>jalan2</td>
+                                                    
+                                                        <td>jakarta</td>
+                                                    
+                                                        <td>1234</td>
+                                                    
+                                                </tr>
+                                            
+                                        </table>
+                                    
+                                </div>
+
+                                
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Delete Address</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        the user is on the address management page
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        the user deletes an existing address
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        the address should be removed from the address list
                                         
                                     
 
@@ -1471,8 +1865,8 @@ This element `(h5.flex-shrink-0.m-0.d-flex.align-items-center.gutters.bg-seconda
                     ],
                     datasets: [{
                         data: [
+                            3,
                             0,
-                            1,
                             0,
                             0,
                             0,

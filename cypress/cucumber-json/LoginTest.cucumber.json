@@ -33,7 +33,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 2418000000
+              "duration": 1112000000
             }
           },
           {
@@ -60,7 +60,7 @@
             "name": "I entered valid credential",
             "result": {
               "status": "passed",
-              "duration": 698000000
+              "duration": 661000000
             }
           },
           {
@@ -70,7 +70,7 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 2262000000
+              "duration": 1261000000
             }
           },
           {
@@ -80,7 +80,7 @@
             "name": "Validate the title after login",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 1456000000
+              "duration": 1051000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "I entered invalid credential",
             "result": {
               "status": "passed",
-              "duration": 526000000
+              "duration": 522000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 525000000
+              "duration": 1383000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "Validate the error message for invalid login",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           }
         ]
