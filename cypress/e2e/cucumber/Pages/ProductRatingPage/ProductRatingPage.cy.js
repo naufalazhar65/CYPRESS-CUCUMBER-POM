@@ -8,7 +8,7 @@ class ProductRatingPage {
 		cy.get('.start-form-check')
 			.find('input')
 			.should('have.length', 6)
-			.eq(4)
+			.eq(1)
 			.click({ force: true })
 	}
 

@@ -23,7 +23,7 @@
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 5258000000
+              "duration": 7773000000
             }
           },
           {
@@ -60,7 +60,7 @@
             "name": "the user adds a new address with valid details",
             "result": {
               "status": "passed",
-              "duration": 4710000000
+              "duration": 6065000000
             }
           },
           {
@@ -70,7 +70,7 @@
             "name": "the new address should be visible in the address list",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 14000000
             }
           }
         ]
@@ -90,7 +90,7 @@
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 3529000000
+              "duration": 4757000000
             }
           },
           {
@@ -127,7 +127,7 @@
             "name": "the user edits an existing address",
             "result": {
               "status": "passed",
-              "duration": 4664000000
+              "duration": 4534000000
             }
           },
           {
@@ -137,7 +137,7 @@
             "name": "updates the address details",
             "result": {
               "status": "passed",
-              "duration": 1111000000
+              "duration": 2128000000
             }
           },
           {
@@ -174,7 +174,7 @@
             "name": "the changes should be reflected in the address list",
             "result": {
               "status": "passed",
-              "duration": 1984000000
+              "duration": 1061000000
             }
           }
         ]
@@ -194,7 +194,7 @@
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 5103000000
+              "duration": 5237000000
             }
           },
           {
@@ -204,7 +204,7 @@
             "name": "the user deletes an existing address",
             "result": {
               "status": "passed",
-              "duration": 799000000
+              "duration": 802000000
             }
           },
           {
@@ -214,7 +214,7 @@
             "name": "the address should be removed from the address list",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 17000000
             }
           }
         ]
