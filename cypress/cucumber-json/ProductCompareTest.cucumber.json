@@ -1,0 +1,69 @@
+[
+  {
+    "description": "    As a user, I want to compare multiple products.",
+    "keyword": "Feature",
+    "name": "Product Comparison",
+    "line": 1,
+    "id": "product-comparison",
+    "tags": [],
+    "uri": "ProductCompareTest.feature",
+    "elements": [
+      {
+        "id": "product-comparison;compare-products",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Compare Products",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 1931000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user adds products the comparison list",
+            "result": {
+              "status": "passed",
+              "duration": 8694000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user is on the product comparison page",
+            "result": {
+              "status": "passed",
+              "duration": 815000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user should see compared products in the comparison table",
+            "result": {
+              "status": "failed",
+              "duration": 10041000000,
+              "error_message": "AssertionError: Timed out retrying after 10000ms: Too many elements found. Found '40', expected '2'.\n    + expected - actual\n\n    -40\n    +2\n\n    at ProductComparePage.verifyComparedProducts (cypress/e2e/cucumber/Pages/ProductComparePage/ProductComparePage.cy.js:27:59)\n    at Context.eval (cypress/e2e/cucumber/Tests/ProductCompareTest/ProductCompareTest.cy.js:20:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
