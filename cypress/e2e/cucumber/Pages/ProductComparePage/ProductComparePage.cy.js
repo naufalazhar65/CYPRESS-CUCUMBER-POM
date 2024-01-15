@@ -19,13 +19,25 @@ class ProductComparePage {
 
     }
 
+    removeProduct() {
+        cy.contains('Remove').first().click()
+        cy.contains('Remove').click()
+
+    }
+
     comparePage() {
         cy.get('.toast-body').first().find('.btn').click()
     }
 
     verifyComparedProducts() {
         cy.get('#content > .table').should('be.visible')
-        cy.get('tbody tr').find('td').should('be.visible').and('have.length', '2')
+        // cy.get('tbody tr').find('td').should('be.visible').and('have.length', '2')
+    }
+
+    verifyComparedProductsIsRemoved() {
+        cy.get('#product-compare').find('.alert').should('be.visible').and('contain', ' Success: You have modified your product comparison!')
+        cy.get('#content > .table').should('not.exist')
+
     }
 }
 

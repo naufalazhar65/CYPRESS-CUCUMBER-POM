@@ -11,12 +11,12 @@
       {
         "id": "product-comparison;compare-products",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 10,
         "name": "Compare Products",
         "tags": [
           {
             "name": "@smoke",
-            "line": 7
+            "line": 9
           }
         ],
         "type": "scenario",
@@ -28,27 +28,27 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 1931000000
+              "duration": 1878000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
+            "line": 6,
             "name": "the user adds products the comparison list",
             "result": {
               "status": "passed",
-              "duration": 8694000000
+              "duration": 2865000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 7,
             "name": "the user is on the product comparison page",
             "result": {
               "status": "passed",
-              "duration": 815000000
+              "duration": 791000000
             }
           },
           {
@@ -57,9 +57,68 @@
             "line": 11,
             "name": "the user should see compared products in the comparison table",
             "result": {
-              "status": "failed",
-              "duration": 10041000000,
-              "error_message": "AssertionError: Timed out retrying after 10000ms: Too many elements found. Found '40', expected '2'.\n    + expected - actual\n\n    -40\n    +2\n\n    at ProductComparePage.verifyComparedProducts (cypress/e2e/cucumber/Pages/ProductComparePage/ProductComparePage.cy.js:27:59)\n    at Context.eval (cypress/e2e/cucumber/Tests/ProductCompareTest/ProductCompareTest.cy.js:20:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "product-comparison;remove-product-from-comparison",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Remove Product from Comparison",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 1805000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user adds products the comparison list",
+            "result": {
+              "status": "passed",
+              "duration": 2793000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user is on the product comparison page",
+            "result": {
+              "status": "passed",
+              "duration": 807000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the user removes a product from the comparison list",
+            "result": {
+              "status": "passed",
+              "duration": 1639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the user should see the updated comparison table without the removed product",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
             }
           }
         ]
