@@ -4,6 +4,7 @@ Feature: Product Checkout
     Background:
         Given the user is on the home page
 
+
     @smoke
     Scenario: Checkout Product
         When the user adds a product to the cart
@@ -13,5 +14,5 @@ Feature: Product Checkout
             | Telephone | FirstName | LastName | Company    | Address1 | Address2 | City    | PostCode | Comment |
             | 123456    | Naufal    | Azhar    | Pt.mamkmur | jalan1   | jalan2   | jakarta | 1234     | hallo   |
         And the user should see a confirmation order
-        # And the user should see the success message "Your order has been placed successfully!"
+        And the user should see the success message " Your order has been placed!"
 

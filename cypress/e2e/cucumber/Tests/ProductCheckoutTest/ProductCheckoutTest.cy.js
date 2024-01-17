@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+require('cypress-xpath');
+
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
 import productCheckoutPage from '../../Pages/ProductCheckoutPage/ProductCheckoutPage.cy'
 
@@ -34,6 +36,7 @@ And('the user completes the checkout process', (datatable) => {
 		//     element.Comment,
 		// )
 
+
 		//  chooseAddress for an existing address
 		productCheckoutPage.chooseAddress()
 		//=================================================================
@@ -47,6 +50,6 @@ And('the user should see a confirmation order', () => {
 	productCheckoutPage.verifyConfirmationOrder()
 })
 
-And('the user should see the success message "Your order has been placed successfully!"',() => {
-	// productCheckoutPage.verifyConfirmationOrder()
+And('the user should see the success message {string}',(msg) => {
+	productCheckoutPage.verifyCheckoutSuccessfully(msg)
 })

@@ -5,20 +5,23 @@ class ProductCheckoutPage {
 		cy.get('#input-password').type('naufal354')
 		cy.get('form > .btn').click()
 		cy.visit('/index.php?route=common/home')
-	}
+	} 
+
 	addProductToCart() {
-		// cy.get('.product-action').find('.cart-107').first().click({ force: true });
-		cy.get('#entry_217825 > .cart > .cart-icon')
-			.find('.cart-item-total')
-			.should('contain', '1')
-		cy.get('#entry_217825 > .cart > .cart-icon').click({ force: true })
-		cy.contains('Cart').should('be.visible')
-		cy.contains('Sub-Total:').should('be.visible')
-		cy.contains('Total').should('be.visible')
-		cy.get(':nth-child(2) > .text-right > strong').should('be.visible')
-		cy.get('#entry_217850 > .icon-right').should('have.text', '  Edit cart')
-		cy.get('#entry_217851 > .icon-right').should('have.text', '  Checkout')
-		cy.get('#entry_217850 > .icon-right').click()
+		// cy.xpath("//div[@aria-label='1 / 24']//button[@title='Add to Cart']").scrollIntoView().click()
+		cy.get('.product-action').find('.cart-28').first().click({ force: true });
+		cy.get('.form-row > :nth-child(1) > .btn').click()
+		// cy.get('#entry_217825 > .cart > .cart-icon')
+		// 	.find('.cart-item-total')
+		// 	.should('contain', '1')
+		// cy.get('#entry_217825 > .cart > .cart-icon').click({ force: true })
+		// cy.contains('Cart').should('be.visible')
+		// cy.contains('Sub-Total:').should('be.visible')
+		// cy.contains('Total').should('be.visible')
+		// cy.get(':nth-child(2) > .text-right > strong').should('be.visible')
+		// cy.get('#entry_217850 > .icon-right').should('have.text', '  Edit cart')
+		// cy.get('#entry_217851 > .icon-right').should('have.text', '  Checkout')
+		// cy.get('#entry_217850 > .icon-right').click()
 	}
 
 	proceedToCheckout() {
@@ -126,8 +129,12 @@ class ProductCheckoutPage {
 		cy.contains('Shipping Address').should('be.visible')
 		cy.contains('Shipping Method:').should('be.visible')
 		cy.get('.table-responsive').should('be.visible').find('tbody').and('have.length', 2)
-
+		cy.get('#button-confirm').click()
 	}	
+
+	verifyCheckoutSuccessfully(msg) {
+		cy.get('.page-title').should('have.text', msg)
+	}
 }
 
 const productCheckoutPage = new ProductCheckoutPage()

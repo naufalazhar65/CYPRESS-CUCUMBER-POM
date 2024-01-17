@@ -11,12 +11,12 @@
       {
         "id": "product-checkout;checkout-product",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 9,
         "name": "Checkout Product",
         "tags": [
           {
             "name": "@smoke",
-            "line": 7
+            "line": 8
           }
         ],
         "type": "scenario",
@@ -28,37 +28,37 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 6054000000
+              "duration": 6074000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
+            "line": 10,
             "name": "the user adds a product to the cart",
             "result": {
               "status": "passed",
-              "duration": 1635000000
+              "duration": 2270000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 11,
             "name": "the user proceeds to checkout",
             "result": {
               "status": "passed",
-              "duration": 1668000000
+              "duration": 2061000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "the user should be on the checkout page",
             "result": {
               "status": "passed",
-              "duration": 333000000
+              "duration": 277000000
             }
           },
           {
@@ -95,21 +95,31 @@
               }
             ],
             "keyword": "And ",
-            "line": 12,
+            "line": 13,
             "name": "the user completes the checkout process",
             "result": {
               "status": "passed",
-              "duration": 386000000
+              "duration": 402000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 16,
             "name": "the user should see a confirmation order",
             "result": {
               "status": "passed",
-              "duration": 2378000000
+              "duration": 1548000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user should see the success message \" Your order has been placed!\"",
+            "result": {
+              "status": "passed",
+              "duration": 954000000
             }
           }
         ]

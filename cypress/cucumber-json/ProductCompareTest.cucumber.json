@@ -28,7 +28,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 1878000000
+              "duration": 5772000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user adds products the comparison list",
             "result": {
               "status": "passed",
-              "duration": 2865000000
+              "duration": 3069000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "the user is on the product comparison page",
             "result": {
               "status": "passed",
-              "duration": 791000000
+              "duration": 1994000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "the user should see compared products in the comparison table",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           }
         ]
@@ -78,7 +78,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 1805000000
+              "duration": 1951000000
             }
           },
           {
@@ -88,7 +88,7 @@
             "name": "the user adds products the comparison list",
             "result": {
               "status": "passed",
-              "duration": 2793000000
+              "duration": 2810000000
             }
           },
           {
@@ -98,7 +98,7 @@
             "name": "the user is on the product comparison page",
             "result": {
               "status": "passed",
-              "duration": 807000000
+              "duration": 1860000000
             }
           },
           {
@@ -108,7 +108,7 @@
             "name": "the user removes a product from the comparison list",
             "result": {
               "status": "passed",
-              "duration": 1639000000
+              "duration": 1819000000
             }
           },
           {
@@ -118,7 +118,7 @@
             "name": "the user should see the updated comparison table without the removed product",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 14000000
             }
           }
         ]
