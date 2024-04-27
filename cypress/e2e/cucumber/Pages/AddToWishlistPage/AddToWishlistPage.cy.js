@@ -19,7 +19,7 @@ class AddToWishlistPage {
 
 	addToWishlist() {
 		cy.get('@selectProduct')
-			.find('.wishlist-103')
+			.find('.wishlist-107')
 			.first()
 			.click({ force: true })
 		cy.get('.toast-body')
@@ -33,15 +33,15 @@ class AddToWishlistPage {
 		cy.visit('/index.php?route=account/wishlist')
 		cy.url().should('include', '/wishlist')
 		cy.get('.table-responsive tbody')
-			.should('have.length', 2)
+			.should('have.length', 1)
 			.as('addedProductName02')
 	}
 
 	verifyProductInWishlist() {
 		cy.get('@addedProductName02')
-			.find('tr')
-			.eq(2)
-			.should('contain', 'HTC Touch HD')
+			.find('td')
+			.eq(1)
+			.should('contain', 'iMac')
 	}
 
 	removeProduct() {
@@ -49,7 +49,7 @@ class AddToWishlistPage {
 	}
 
 	verifyWishlistIsEmpty() {
-		cy.get('.table-responsive tbody').should('not.be.visible')
+		cy.get('.table-responsive tbody').should('not.exist')
 	}
 
 	verifyRemoveMessage() {
@@ -61,3 +61,4 @@ class AddToWishlistPage {
 
 const addToWishlistPage = new AddToWishlistPage()
 export default addToWishlistPage
+

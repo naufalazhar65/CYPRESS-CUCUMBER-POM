@@ -28,7 +28,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 7318000000
+              "duration": 5789000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user selects a product",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 60000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "adds the product to the wishlist",
             "result": {
               "status": "passed",
-              "duration": 1799000000
+              "duration": 865000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "the user should be redirected to the wishlist page",
             "result": {
               "status": "passed",
-              "duration": 551000000
+              "duration": 476000000
             }
           },
           {
@@ -88,7 +88,7 @@
             "name": "the user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 5156000000
+              "duration": 5441000000
             }
           },
           {
@@ -98,7 +98,7 @@
             "name": "the user is on the wishlist page",
             "result": {
               "status": "passed",
-              "duration": 516000000
+              "duration": 461000000
             }
           },
           {
@@ -108,7 +108,7 @@
             "name": "removes the product from the wishlist",
             "result": {
               "status": "passed",
-              "duration": 825000000
+              "duration": 810000000
             }
           },
           {
@@ -118,7 +118,7 @@
             "name": "the product should be removed from the wishlist",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           },
           {
