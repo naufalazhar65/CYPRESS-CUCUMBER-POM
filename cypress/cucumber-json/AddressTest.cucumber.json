@@ -11,7 +11,7 @@
       {
         "id": "address-management;add-new-address",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 8,
         "name": "Add New Address",
         "tags": [],
         "type": "scenario",
@@ -19,11 +19,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 7773000000
+              "duration": 20063000000
             }
           },
           {
@@ -56,21 +56,21 @@
               }
             ],
             "keyword": "When ",
-            "line": 8,
+            "line": 9,
             "name": "the user adds a new address with valid details",
             "result": {
               "status": "passed",
-              "duration": 6065000000
+              "duration": 19095000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "the new address should be visible in the address list",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 11000000
             }
           }
         ]
@@ -78,7 +78,7 @@
       {
         "id": "address-management;edit-address",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 14,
         "name": "Edit Address",
         "tags": [],
         "type": "scenario",
@@ -86,11 +86,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 4757000000
+              "duration": 17625000000
             }
           },
           {
@@ -123,21 +123,21 @@
               }
             ],
             "keyword": "When ",
-            "line": 14,
+            "line": 15,
             "name": "the user edits an existing address",
             "result": {
               "status": "passed",
-              "duration": 4534000000
+              "duration": 7502000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 18,
             "name": "updates the address details",
             "result": {
               "status": "passed",
-              "duration": 2128000000
+              "duration": 5009000000
             }
           },
           {
@@ -170,11 +170,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 18,
+            "line": 19,
             "name": "the changes should be reflected in the address list",
             "result": {
               "status": "passed",
-              "duration": 1061000000
+              "duration": 5812000000
             }
           }
         ]
@@ -182,7 +182,7 @@
       {
         "id": "address-management;delete-address",
         "keyword": "Scenario",
-        "line": 22,
+        "line": 23,
         "name": "Delete Address",
         "tags": [],
         "type": "scenario",
@@ -190,31 +190,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "the user is on the address management page",
             "result": {
               "status": "passed",
-              "duration": 5237000000
+              "duration": 19179000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 24,
             "name": "the user deletes an existing address",
             "result": {
               "status": "passed",
-              "duration": 802000000
+              "duration": 1135000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 25,
             "name": "the address should be removed from the address list",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 16000000
             }
           }
         ]
