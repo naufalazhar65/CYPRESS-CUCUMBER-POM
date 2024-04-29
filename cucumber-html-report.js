@@ -1,12 +1,30 @@
-// *** Let name it cucumber-html-report.js **
 const report = require('multiple-cucumber-html-reporter')
+
+function getCurrentTime() {
+	const now = new Date()
+	return now.toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })
+}
+
+function getUniqueCycle() {
+	const now = new Date()
+	return `Cycle_${now.getFullYear()}${(now.getMonth() + 1)
+		.toString()
+		.padStart(2, '0')}${now.getDate().toString().padStart(2, '0')}_${now
+		.getHours()
+		.toString()
+		.padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}${now
+		.getSeconds()
+		.toString()
+		.padStart(2, '0')}`
+}
+
 report.generate({
-	jsonDir: 'cypress/cucumber-json', // ** Path of .json file **//
+	jsonDir: 'cypress/cucumber-json',
 	reportPath: './reports/cucumber-html-report',
 	metadata: {
 		browser: {
 			name: 'chrome',
-			version: '119',
+			version: '124',
 		},
 		device: 'Local test machine',
 		platform: {
@@ -15,13 +33,13 @@ report.generate({
 		},
 	},
 	customData: {
-		title: "Run info",
+		title: 'Run info',
 		data: [
-		  { label: "Project", value: "Custom project" },
-		  { label: "Release", value: "1.2.3" },
-		  { label: "Cycle", value: "B11221.34321" },
-		  { label: "Execution Start Time", value: "Nov 19th 2017, 02:31 PM EST" },
-		  { label: "Execution End Time", value: "Nov 19th 2017, 02:56 PM EST" },
+			{ label: 'Project', value: 'Custom project' },
+			{ label: 'Release', value: '1.2.3' },
+			{ label: 'Cycle', value: getUniqueCycle() },
+			{ label: 'Execution Start Time', value: getCurrentTime() },
+			{ label: 'Execution End Time', value: getCurrentTime() },
 		],
-	  },
+	},
 })

@@ -32,8 +32,7 @@
             "line": 6,
             "name": "I navigate to the Website",
             "result": {
-              "status": "passed",
-              "duration": 4626000000
+              "status": "skipped"
             }
           },
           {
@@ -59,8 +58,7 @@
             "line": 9,
             "name": "I entered valid credential",
             "result": {
-              "status": "passed",
-              "duration": 636000000
+              "status": "skipped"
             }
           },
           {
@@ -69,8 +67,7 @@
             "line": 12,
             "name": "User click on sign in button",
             "result": {
-              "status": "passed",
-              "duration": 1733000000
+              "status": "skipped"
             }
           },
           {
@@ -79,8 +76,7 @@
             "line": 13,
             "name": "Validate the title after login",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           }
         ]
@@ -109,7 +105,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 1434000000
+              "duration": 6880000000
             }
           },
           {
@@ -136,7 +132,7 @@
             "name": "I entered invalid credential",
             "result": {
               "status": "passed",
-              "duration": 513000000
+              "duration": 575000000
             }
           },
           {
@@ -146,7 +142,7 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 1335000000
+              "duration": 509000000
             }
           },
           {
@@ -156,7 +152,7 @@
             "name": "Validate the error message for invalid login",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 7000000
             }
           }
         ]

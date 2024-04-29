@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "rm -r cypress/cucumber-json/*.json && rm -r ./reports/cucumber-html-report/",
-    "test:spec": "cypress run --spec cypress/e2e/cucumber/TestsLoginTest.feature --env TAGS=@regression && node cucumber-html-report.js",
+    "test:spec": "cypress run --spec cypress/e2e/cucumber/Tests/LoginTest.feature --env TAGS=@regression && node cucumber-html-report.js",
     "cypress:open": "cypress open",
     "cypress:tests": "cypress run --browser chrome && node cucumber-html-report.js"
   },
