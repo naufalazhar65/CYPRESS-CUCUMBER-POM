@@ -5,12 +5,11 @@ import registerPage from '../../Pages/RegisterPage/RegisterPage.cy'
 
 Given('the user is on the registration page', () => {
 	registerPage.enterURL()
-	registerPage.verifyPageTitle()
 })
 
 When('the user registers with the following details:', (datatable) => {
 	datatable.hashes().forEach((element) => {
-		registerPage.enterRegistrationDetails(
+		registerPage.fillRegistrationForm(
 			element.FirstName,
 			element.LastName,
 			element.Email,
@@ -18,7 +17,7 @@ When('the user registers with the following details:', (datatable) => {
 			element.Password,
 			element.ConfirmPassword,
 		)
-		registerPage.clickRegisterButton()
+		registerPage.submitForm()
 	})
 })
 
@@ -26,6 +25,7 @@ Then('the user should be redirected to the dashboard', () => {
 	registerPage.verifySuccessfulRegistration()
 })
 
-Then('an error message should be displayed', () => {
-	registerPage.verifyErrorMessage()
-})
+Then('an error message should be displayed:', (dataTable) => {
+    const expectedError = dataTable.hashes()[0].ErrorMessage;
+    registerPage.verifyErrorMessage(expectedError);
+});

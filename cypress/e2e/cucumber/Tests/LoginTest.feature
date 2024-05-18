@@ -16,6 +16,11 @@ Feature: I want to login into the site with valid data
     Scenario: Login with invalid credentials
         When I entered invalid credential
             | email           | password |
-            | invalidUsername | invali    |
+            | invalidUsername | invali   |
         And User click on sign in button
         Then Validate the error message for invalid login
+            | ErrorMessage                                                                                     |
+            | No match for E-Mail Address and/or Password                                                      |
+            | Warning: No match for E-Mail Address and/or Password.                                            |
+            | Your account has exceeded allowed number of login attempts                                       |
+            | Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour. |

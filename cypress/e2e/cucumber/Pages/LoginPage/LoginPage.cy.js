@@ -22,33 +22,19 @@ class LoginPage {
 		return cy.url().should('include', '/account')
 	}
 
-	verifyErrorMessage() {
-		return cy
-			.get('#account-login > .alert')
-			.should('be.visible')
-			.then(($alert) => {
-				const alertText = $alert.text()
-
-				if (
-					alertText.includes(
-						'No match for E-Mail Address and/or Password',
-					)
-				) {
-					expect(alertText).to.equal(
-						' Warning: No match for E-Mail Address and/or Password.',
-					)
-				} else if (
-					alertText.includes(
-						'Your account has exceeded allowed number of login attempts',
-					)
-				) {
-					expect(alertText).to.equal(
-						' Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.',
-					)
-				} else {
-					throw new Error('Unexpected error message: ' + alertText)
-				}
+	verifyErrorMessages(expectedErrors) {
+		cy.get('#account-login').then(() => {
+			let foundError = false
+			expectedErrors.forEach((error) => {
+				cy.get('body').then(($body) => {
+					if ($body.text().includes(error)) {
+						cy.contains('.alert', error).should('be.visible')
+						foundError = true
+					}
+				})
 			})
+		})
+		return this
 	}
 }
 

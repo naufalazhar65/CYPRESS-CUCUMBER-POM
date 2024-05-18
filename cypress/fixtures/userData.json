@@ -1,0 +1,7 @@
+{
+  "validEmail": "naufalazhar65@gmail.com",
+  "validPassword": "naufal354",
+
+  "invalidEmail": "invalid@gmail.com",
+  "invalidPassword": "invalid123"
+}

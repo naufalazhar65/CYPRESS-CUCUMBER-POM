@@ -32,7 +32,8 @@
             "line": 6,
             "name": "I navigate to the Website",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1069000000
             }
           },
           {
@@ -58,7 +59,8 @@
             "line": 9,
             "name": "I entered valid credential",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 674000000
             }
           },
           {
@@ -67,7 +69,8 @@
             "line": 12,
             "name": "User click on sign in button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2551000000
             }
           },
           {
@@ -76,7 +79,8 @@
             "line": 13,
             "name": "Validate the title after login",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6000000
             }
           }
         ]
@@ -105,7 +109,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 6880000000
+              "duration": 883000000
             }
           },
           {
@@ -132,7 +136,7 @@
             "name": "I entered invalid credential",
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 543000000
             }
           },
           {
@@ -142,17 +146,47 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 509000000
+              "duration": 532000000
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ErrorMessage"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "No match for E-Mail Address and/or Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: No match for E-Mail Address and/or Password."
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Your account has exceeded allowed number of login attempts"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "Then ",
             "line": 21,
             "name": "Validate the error message for invalid login",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 27000000
             }
           }
         ]

@@ -1,15 +1,11 @@
 class RegisterPage {
 	enterURL() {
 		cy.visit('/index.php?route=account/register')
+		cy.title().should('eq', 'Register Account')
+
 	}
 
-	enterRegistrationDetails(
-		firstName,
-		lastName,
-		email,
-		telephone,
-		password,
-		confirmPassword,
+	fillRegistrationForm(firstName, lastName, email, telephone, password, confirmPassword,
 	) {
 		cy.get('#input-firstname').type(firstName)
 		cy.get('#input-lastname').type(lastName)
@@ -20,47 +16,21 @@ class RegisterPage {
 		return this
 	}
 
-	clickRegisterButton() {
+	submitForm() {
 		cy.get('#input-newsletter-yes').check({ force: true })
 		cy.get('input[type="checkbox"]').check({ force: true })
 		cy.get('input[value="Continue"]').click()
 		return this
 	}
 
-	verifyPageTitle() {
-		return cy.title().should('eq', 'Register Account')
-	}
-
-	verifyErrorMessage() {
-		cy.get('#account-register').then(($error) => {
-			if (
-				$error
-					.text()
-					.includes('Password confirmation does not match password!')
-			) {
-				cy.get('.text-danger')
-					.should('be.visible')
-					.and(
-						'include.text',
-						'Password confirmation does not match password!',
-					)
-			} else if (
-				$error
-					.text()
-					.includes('Warning: E-Mail Address is already registered!')
-			) {
-				cy.get('#account-register > .alert')
-					.should('be.visible')
-					.and(
-						'include.text',
-						'Warning: E-Mail Address is already registered!',
-					)
-			} else {
-				throw new Error('Unexpected error message!')
-			}
-		})
-		return this
-	}
+	verifyErrorMessage(expectedError) {
+        cy.get('#account-register').then(() => {
+            cy.get('.text-danger, #account-register > .alert')
+                .should('be.visible')
+                .and('include.text', expectedError);
+        });
+        return this;
+    }
 
 	verifySuccessfulRegistration() {
 		return cy.contains(' Your Account Has Been Created!')
