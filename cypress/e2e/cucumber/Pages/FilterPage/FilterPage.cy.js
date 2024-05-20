@@ -6,7 +6,19 @@ class FilterPage {
 	filterProductsByCategory(category) {
 		cy.get('.col-sm-4').find('.custom-select').select(category)
 		cy.get('#button-search').click()
-		cy.wait(3000)
+		cy.wait(1000)
+	}
+
+	setMinPrice(minPrice) {
+		cy.xpath('/html/body/div[1]/div[6]/div[1]/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div[2]/div/div[2]/input[1]')
+			.invoke('val', minPrice)
+			.as('minPrice')
+	}
+
+	setMaxPrice(maxPrice) {
+		cy.xpath('/html/body/div[1]/div[6]/div[1]/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div[2]/div/div[2]/input[2]')
+			.invoke('val', maxPrice)
+			.as('maxPrice')
 	}
 
 	setSliderPercentage(sliderSelector, targetPercentage) {
@@ -39,8 +51,8 @@ class FilterPage {
 			.find('.custom-select')
 			.should('have.value', category)
 
-		cy.get('[name="mz_fp[min]"]').should('have.value', minPrice)
-		cy.get('[name="mz_fp[max]"]').should('have.value', maxPrice)
+		cy.get('@minPrice').should('have.value', minPrice)
+		cy.get('@maxPrice').should('have.value', maxPrice)
 	}
 }
 

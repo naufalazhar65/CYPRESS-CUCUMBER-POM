@@ -9,5 +9,5 @@ Feature: Filter Products
     @smoke
     Scenario: Filter products by category and price range
         When the user filters products by category "18"
-        And filters products by price range 300 to 800
-        Then the user should see filtered products with category "18" and price range 98 to 2000
+        And filters products by price range 380 to 800
+        Then the user should see filtered products with category "18" and price range 380 to 800

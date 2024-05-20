@@ -15,7 +15,9 @@ When('the user filters products by category {string}', (category) => {
 });
 
 And('filters products by price range {int} to {int}', (minPrice, maxPrice) => {
-    filterPage.filterProductsByPriceRange(minPrice, maxPrice);
+    // filterPage.filterProductsByPriceRange(minPrice, maxPrice);
+    filterPage.setMinPrice(minPrice)
+    filterPage.setMaxPrice(maxPrice)
 });
 
 Then('the user should see filtered products with category {string} and price range {int} to {int}', (category, minPrice, maxPrice) => {

@@ -24,12 +24,10 @@ class LoginPage {
 
 	verifyErrorMessages(expectedErrors) {
 		cy.get('#account-login').then(() => {
-			let foundError = false
 			expectedErrors.forEach((error) => {
 				cy.get('body').then(($body) => {
 					if ($body.text().includes(error)) {
 						cy.contains('.alert', error).should('be.visible')
-						foundError = true
 					}
 				})
 			})
