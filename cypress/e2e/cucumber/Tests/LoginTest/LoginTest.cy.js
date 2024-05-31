@@ -6,19 +6,19 @@ Given('I navigate to the Website', () => {
 	login.enterURL()
 })
 
-When('I entered valid credential', (datatable) => {
+When('I entered valid credentials', (datatable) => {
 	datatable.hashes().forEach((element) => {
 		login.enterUserNamePassword(element.email, element.password)
 	})
 })
 
-When('I entered invalid credential', (datatable) => {
+When('I entered invalid credentials', (datatable) => {
 	datatable.hashes().forEach((element) => {
 		login.enterUserNamePassword(element.email, element.password)
 	})
 })
 
-And('User click on sign in button', () => {
+And('User clicks on the sign-in button', () => {
 	login.clickSubmitButton()
 })
 Then('Validate the title after login', () => {

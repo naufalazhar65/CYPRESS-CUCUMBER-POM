@@ -1,0 +1,200 @@
+[
+  {
+    "description": "    As a user, I want to log in with valid or invalid credentials.",
+    "keyword": "Feature",
+    "name": "I want to login into the site with valid data",
+    "line": 2,
+    "id": "i-want-to-login-into-the-site-with-valid-data",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "LoginTest.feature",
+    "elements": [
+      {
+        "id": "i-want-to-login-into-the-site-with-valid-data;login-as-new-sign-up-user-with-valid-data",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login as new sign up user with valid data",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 2301000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "naufalazhar65@gmail.com",
+                      "naufal354"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I entered valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 682000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User clicks on the sign-in button",
+            "result": {
+              "status": "passed",
+              "duration": 4013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Validate the title after login",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-want-to-login-into-the-site-with-valid-data;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Login with invalid credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 2298000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invalidUsername",
+                      "invali"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I entered invalid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 520000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks on the sign-in button",
+            "result": {
+              "status": "passed",
+              "duration": 964000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ErrorMessage"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "No match for E-Mail Address and/or Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: No match for E-Mail Address and/or Password."
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Your account has exceeded allowed number of login attempts"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Validate the error message for invalid login",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

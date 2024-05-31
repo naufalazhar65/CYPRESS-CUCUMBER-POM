@@ -5,19 +5,20 @@ Feature: I want to login into the site with valid data
     Background: Navigate to the Website
         Given I navigate to the Website
 
+    @smoke
     Scenario: Login as new sign up user with valid data
-        When I entered valid credential
-            | email                   | password   |
-            | naufalazhar65@gmail.com | naufal354  |
-        And User click on sign in button
+        When I entered valid credentials
+            | email                   | password  |
+            | naufalazhar65@gmail.com | naufal354 |
+        And User clicks on the sign-in button
         Then Validate the title after login
 
     @regression
     Scenario: Login with invalid credentials
-        When I entered invalid credential
-            | email           | password |
-            | invalidUsername | invali   |
-        And User click on sign in button
+        When I entered invalid credentials
+            | email          | password |
+            | invalidUsername| invali   |
+        And User clicks on the sign-in button
         Then Validate the error message for invalid login
             | ErrorMessage                                                                                     |
             | No match for E-Mail Address and/or Password                                                      |
