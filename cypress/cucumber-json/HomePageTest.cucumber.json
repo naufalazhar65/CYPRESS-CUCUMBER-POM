@@ -1,0 +1,78 @@
+[
+  {
+    "description": "    As a user, I want to verify elements and functionalities on the home page.",
+    "keyword": "Feature",
+    "name": "Home Page Test",
+    "line": 1,
+    "id": "home-page-test",
+    "tags": [],
+    "uri": "HomePageTest.feature",
+    "elements": [
+      {
+        "id": "home-page-test;search-for-a-product",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Search for a Product",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 26
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 9045000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "the user enters a search query",
+            "result": {
+              "status": "passed",
+              "duration": 808000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the user clicks the search button",
+            "result": {
+              "status": "passed",
+              "duration": 4323000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the user should see search results",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the user should be able to navigate to a product from the search results",
+            "result": {
+              "status": "passed",
+              "duration": 6469000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

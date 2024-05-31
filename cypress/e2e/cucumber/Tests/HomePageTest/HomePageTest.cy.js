@@ -14,10 +14,11 @@ Then('the user should see the site logo', () => {
 And('the user should see the navigation menu', () => {
 	homePage.verifyNavigationMenu()
 	homePage.verifyNavbarVertical()
+	homePage.closeNavbarVertical()
 })
 
-And('the user should see featured products', () => {
-	homePage.verifyFeaturedProducts()
+And('the user should see top products', () => {
+	homePage.verifyTopProducts()
 })
 
 And('the user should see the footer', () => {
@@ -63,12 +64,9 @@ Then('the user should see search results', () => {
 	homePage.verifySearchResults()
 })
 
-And(
-	'the user should be able to navigate to a product from the search results',
-	() => {
-		homePage.navigateToProductFromSearchResults()
-	},
-)
+And('the user should be able to navigate to a product from the search results', () => {
+	homePage.navigateToProductFromSearchResults()
+})
 
 // Scenario: View Shopping Cart
 When('the user clicks on the shopping cart icon', () => {

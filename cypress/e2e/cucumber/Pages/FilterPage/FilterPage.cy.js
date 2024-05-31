@@ -19,6 +19,7 @@ class FilterPage {
 		cy.xpath('/html/body/div[1]/div[6]/div[1]/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div[2]/div/div[2]/input[2]')
 			.invoke('val', maxPrice)
 			.as('maxPrice')
+			.type('{enter}')
 	}
 
 	setSliderPercentage(sliderSelector, targetPercentage) {
@@ -37,12 +38,12 @@ class FilterPage {
 	filterProductsByPriceRange() {
 		this.setSliderPercentage(
 			'//body/div[1]/div[6]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/span[1]',
-			10,
+			15.878,
 		)
 
 		this.setSliderPercentage(
 			'//body/div[1]/div[6]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/span[2]',
-			36,
+			100,
 		)
 	}
 

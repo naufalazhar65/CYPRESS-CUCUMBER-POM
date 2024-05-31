@@ -1,0 +1,68 @@
+[
+  {
+    "description": "    As a user, I want to filter products based on category and price range.",
+    "keyword": "Feature",
+    "name": "Filter Products",
+    "line": 1,
+    "id": "filter-products",
+    "tags": [],
+    "uri": "FilterTest.feature",
+    "elements": [
+      {
+        "id": "filter-products;filter-products-by-category-and-price-range",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Filter products by category and price range",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is logged in and on the product filter page",
+            "result": {
+              "status": "passed",
+              "duration": 3615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user filters products by category \"18\"",
+            "result": {
+              "status": "passed",
+              "duration": 2529000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "filters products by price range 380 to 800",
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user should see filtered products with category \"18\" and price range 380 to 800",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

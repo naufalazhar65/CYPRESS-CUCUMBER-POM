@@ -1,3 +1,5 @@
+import { should } from "chai"
+
 class HomePage {
 	enterURL() {
 		cy.visit('/index.php?route=common/home')
@@ -10,7 +12,7 @@ class HomePage {
 	}
 
 	verifyNavigationMenu() {
-		cy.get('.navbar-nav')
+		cy.get('.navbar-nav') 
 			.should('be.visible')
 			.find('li')
 			.and('contain', 'Home')
@@ -22,37 +24,58 @@ class HomePage {
 	}
 
 	verifyNavbarVertical() {
-		cy.contains('Shop by Category')
-			.should('be.visible')
-			.click({ force: true })
-		cy.contains('Top categories ').should('be.visible')
-		cy.get('.vertical')
-			.should('be.visible')
-			.find('.nav-item')
-			.and('contain', 'Components')
-			.and('contain', 'Cameras')
-			.and('contain', 'Phone, Tablets & Ipod')
-			.and('contain', 'Software')
-			.and('contain', 'MP3 Players')
-			.and('contain', 'Laptops & Notebooks')
-			.and('contain', 'Desktops and Monitors')
-			.and('contain', 'Printers & Scanners')
-			.and('contain', 'Mice and Trackballs')
-			.and('contain', 'Fashion and Accessories')
-			.and('contain', 'Beauty and Saloon')
-			.and('contain', 'Autoparts and Accessories')
-			.and('contain', 'Washing machine')
-			.and('contain', 'Gaming consoles')
-			.and('contain', 'Air conditioner')
-			.and('contain', 'Web Cameras')
+        cy.contains('Shop by Category')
+            .should('be.visible')
+            .click({ force: true });
+			cy.wait(1000)
+        
+        cy.contains('Top categories').should('be.visible');
+
+        const categories = [
+            'Components',
+            'Cameras',
+            'Phone, Tablets & Ipod',
+            'Software',
+            'MP3 Players',
+            'Laptops & Notebooks',
+            'Desktops and Monitors',
+            'Printers & Scanners',
+            'Mice and Trackballs',
+            'Fashion and Accessories',
+            'Beauty and Saloon',
+            'Autoparts and Accessories',
+            'Washing machine',
+            'Gaming consoles',
+            'Air conditioner',
+            'Web Cameras'
+        ];
+
+        cy.get('.vertical').first()
+            .should('be.visible')
+            .find('.nav-item')
+            .each((navItem) => {
+                const text = navItem.text().trim();
+                expect(categories).to.include(text);
+            });
+    }
+
+	closeNavbarVertical() {
+		cy.get('a[aria-label="close"]').first()
+            .should('be.visible')
+            .click({force:true});
 	}
 
-	verifyFeaturedProducts() {
-		cy.get('.product-thumb').should('have.length.greaterThan', 0)
+	verifyTopProducts() {
+		cy.get('.product-thumb').first().should('have.length.greaterThan', 0)
 	}
 
 	verifyFooter() {
-		// Implementation for verifying the footer
+		const footerText = '© LambdaTest - Powered by OpenCart'
+
+		cy.get('.footer').scrollIntoView().should('be.visible').find('p').first().each((expectText) => {
+			const text = expectText.text().trim();
+			expect(footerText).to.include(text);
+		});
 	}
 
 	clickLoginLink() {
@@ -67,7 +90,10 @@ class HomePage {
 	}
 
 	verifyLoginForm() {
-		cy.get('#account-login').should('be.visible')
+		cy.get('form').find('input').should('be.visible').and('have.class', 'form-control')
+		cy.get('#input-email').should('be.visible')
+		cy.get('#input-password').should('be.visible')
+		cy.get("input[type='submit']").should('be.visible')
 	}
 
 	clickFeaturedProduct() {
@@ -98,17 +124,15 @@ class HomePage {
 
 	//==============================================================================================================================
 
-	enterSearchQuery(query) {
-		cy.get(
-			'#entry_217822 > .search-wrapper > form > #search > .search-input-group > .search-input > .flex-fill > input',
-		).type(query)
+	enterSearchQuery() {
+		cy.get('#search').find("input[name='search']").type('HTC Touch HD')
 		cy.get('.dropdown-menu')
 			.should('have.length', 7)
 			.should('contain', 'HTC Touch HD')
 	}
 
 	clickSearchButton() {
-		cy.get('.type-text').click()
+		cy.get('.search-button').find("button[type='submit']").first().click()
 		cy.wait(2000)
 	}
 

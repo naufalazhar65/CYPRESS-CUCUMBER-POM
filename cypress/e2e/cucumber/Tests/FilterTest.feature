@@ -1,5 +1,3 @@
-# FilterTest.feature
-
 Feature: Filter Products
     As a user, I want to filter products based on category and price range.
 
