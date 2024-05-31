@@ -16,8 +16,8 @@ Feature: I want to login into the site with valid data
     @regression
     Scenario: Login with invalid credentials
         When I entered invalid credentials
-            | email          | password |
-            | invalidUsername| invali   |
+            | email           | password |
+            | invalidUsername | invali   |
         And User clicks on the sign-in button
         Then Validate the error message for invalid login
             | ErrorMessage                                                                                     |

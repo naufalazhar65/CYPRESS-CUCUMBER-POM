@@ -17,8 +17,15 @@ When('the user registers with the following details:', (datatable) => {
 			element.Password,
 			element.ConfirmPassword,
 		)
-		registerPage.submitForm()
 	})
+})
+
+And('user check the privacy policy box', () => {
+	registerPage.checkBox();
+})
+
+And('user click the submit button', () => {
+	registerPage.submitForm();
 })
 
 Then('the user should be redirected to the dashboard', () => {

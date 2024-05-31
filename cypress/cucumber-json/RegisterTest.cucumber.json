@@ -1,0 +1,534 @@
+[
+  {
+    "description": "    As a user, I want to register on the website with valid and invalid data.",
+    "keyword": "Feature",
+    "name": "User Registration",
+    "line": 2,
+    "id": "user-registration",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "line": 1
+      }
+    ],
+    "uri": "RegisterTest.feature",
+    "elements": [
+      {
+        "id": "user-registration;successful-registration",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Successful registration",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 1611000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar013@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 1681000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user click the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 3357000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the user should be redirected to the dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-with-existing-email",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Registration with existing email",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 848000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar005@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 1657000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "user click the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 780000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ErrorMessage"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: E-Mail Address is already registered!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "an error message should be displayed:",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-with-weak-password",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Registration with weak password",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 1581000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar1@gmail.com",
+                      "1234567890",
+                      "123",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 31,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 1463000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user click the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 1104000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ErrorMessage"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: E-Mail Address is already registered!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "an error message should be displayed:",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-with-mismatched-passwords",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Registration with mismatched passwords",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 40
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 2472000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar1@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password12356"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 42,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 1689000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "user click the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 1452000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ErrorMessage"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password confirmation does not match password!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "an error message should be displayed:",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;registration-without-checking-privacy-policy",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Registration without checking privacy policy",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 3683000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Email",
+                      "Telephone",
+                      "Password",
+                      "ConfirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Naufal",
+                      "Azhar",
+                      "naufalazhar1@gmail.com",
+                      "1234567890",
+                      "password123",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 52,
+            "name": "the user registers with the following details:",
+            "result": {
+              "status": "passed",
+              "duration": 1662000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "user click the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 1565000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ErrorMessage"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Warning: You must agree to the Privacy Policy!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "an error message should be displayed:",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
