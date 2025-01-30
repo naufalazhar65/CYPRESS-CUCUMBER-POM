@@ -9,7 +9,7 @@ Feature: User Registration
     Scenario: Successful registration
         When the user registers with the following details:
             | FirstName | LastName | Email                    | Telephone  | Password    | ConfirmPassword |
-            | Naufal    | Azhar    | naufalazhar013@gmail.com | 1234567890 | password123 | password123     |
+            | Naufal    | Azhar    | naufalazhar014@gmail.com | 1234567890 | password123 | password123     |
         And user check the privacy policy box
         And user click the submit button
         Then the user should be redirected to the dashboard

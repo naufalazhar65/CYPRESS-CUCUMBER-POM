@@ -3,29 +3,20 @@
     "description": "    As a user, I want to register on the website with valid and invalid data.",
     "keyword": "Feature",
     "name": "User Registration",
-    "line": 2,
+    "line": 1,
     "id": "user-registration",
-    "tags": [
-      {
-        "name": "@Smoke",
-        "line": 1
-      }
-    ],
+    "tags": [],
     "uri": "RegisterTest.feature",
     "elements": [
       {
         "id": "user-registration;successful-registration",
         "keyword": "Scenario",
-        "line": 10,
+        "line": 9,
         "name": "Successful registration",
         "tags": [
           {
-            "name": "@Smoke",
-            "line": 1
-          },
-          {
             "name": "@regression",
-            "line": 9
+            "line": 8
           }
         ],
         "type": "scenario",
@@ -33,11 +24,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 1611000000
+              "duration": 8077000000
             }
           },
           {
@@ -58,7 +49,7 @@
                     "cells": [
                       "Naufal",
                       "Azhar",
-                      "naufalazhar013@gmail.com",
+                      "naufalazhar014@gmail.com",
                       "1234567890",
                       "password123",
                       "password123"
@@ -68,41 +59,41 @@
               }
             ],
             "keyword": "When ",
-            "line": 11,
+            "line": 10,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 1681000000
+              "duration": 1711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 149000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "user check the privacy policy box",
-            "result": {
-              "status": "passed",
-              "duration": 143000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
             "name": "user click the submit button",
             "result": {
-              "status": "passed",
-              "duration": 3357000000
+              "status": "failed",
+              "duration": 20092000000,
+              "error_message": "CypressError: Timed out after waiting `20000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `20000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:130096:64)\n    at <unknown> (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:130412:16)\n    at tryCatcher (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1807:23)\n    at <unknown> (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:4186:41)\n    at tryCatcher (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1697:18)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:163155:53)\n    at $Cypress.action (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:145743:13)\n    at next (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:155528:10)\n    at <unknown> (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:155572:5)\n    at timeslice (https://ecommerce-playground.lambdatest.io/__cypress/runner/cypress_runner.js:146083:27)\nFrom Your Spec Code:\n    at Context.stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:35:0)\n    at eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:54:0)\nat Array.forEach (<anonymous>)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:53:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
+            "line": 15,
             "name": "the user should be redirected to the dashboard",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           }
         ]
@@ -110,16 +101,12 @@
       {
         "id": "user-registration;registration-with-existing-email",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 18,
         "name": "Registration with existing email",
         "tags": [
           {
-            "name": "@Smoke",
-            "line": 1
-          },
-          {
             "name": "@regression",
-            "line": 18
+            "line": 17
           }
         ],
         "type": "scenario",
@@ -127,11 +114,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 848000000
+              "duration": 13019000000
             }
           },
           {
@@ -162,31 +149,31 @@
               }
             ],
             "keyword": "When ",
-            "line": 20,
+            "line": 19,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 1657000000
+              "duration": 1685000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 136000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "user check the privacy policy box",
-            "result": {
-              "status": "passed",
-              "duration": 122000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
             "name": "user click the submit button",
             "result": {
               "status": "passed",
-              "duration": 780000000
+              "duration": 1763000000
             }
           },
           {
@@ -207,11 +194,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 25,
+            "line": 24,
             "name": "an error message should be displayed:",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 10000000
             }
           }
         ]
@@ -219,16 +206,12 @@
       {
         "id": "user-registration;registration-with-weak-password",
         "keyword": "Scenario",
-        "line": 30,
+        "line": 29,
         "name": "Registration with weak password",
         "tags": [
           {
-            "name": "@Smoke",
-            "line": 1
-          },
-          {
             "name": "@regression",
-            "line": 29
+            "line": 28
           }
         ],
         "type": "scenario",
@@ -236,11 +219,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 1581000000
+              "duration": 6135000000
             }
           },
           {
@@ -271,31 +254,31 @@
               }
             ],
             "keyword": "When ",
-            "line": 31,
+            "line": 30,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 1463000000
+              "duration": 1505000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 138000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "user check the privacy policy box",
-            "result": {
-              "status": "passed",
-              "duration": 136000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
             "name": "user click the submit button",
             "result": {
               "status": "passed",
-              "duration": 1104000000
+              "duration": 3934000000
             }
           },
           {
@@ -316,11 +299,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 36,
+            "line": 35,
             "name": "an error message should be displayed:",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           }
         ]
@@ -328,16 +311,12 @@
       {
         "id": "user-registration;registration-with-mismatched-passwords",
         "keyword": "Scenario",
-        "line": 41,
+        "line": 40,
         "name": "Registration with mismatched passwords",
         "tags": [
           {
-            "name": "@Smoke",
-            "line": 1
-          },
-          {
             "name": "@regression",
-            "line": 40
+            "line": 39
           }
         ],
         "type": "scenario",
@@ -345,11 +324,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 2472000000
+              "duration": 2551000000
             }
           },
           {
@@ -380,31 +359,31 @@
               }
             ],
             "keyword": "When ",
-            "line": 42,
+            "line": 41,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 1689000000
+              "duration": 1683000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user check the privacy policy box",
+            "result": {
+              "status": "passed",
+              "duration": 128000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
-            "name": "user check the privacy policy box",
-            "result": {
-              "status": "passed",
-              "duration": 134000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
             "name": "user click the submit button",
             "result": {
               "status": "passed",
-              "duration": 1452000000
+              "duration": 751000000
             }
           },
           {
@@ -425,11 +404,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 47,
+            "line": 46,
             "name": "an error message should be displayed:",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           }
         ]
@@ -437,24 +416,19 @@
       {
         "id": "user-registration;registration-without-checking-privacy-policy",
         "keyword": "Scenario",
-        "line": 51,
+        "line": 50,
         "name": "Registration without checking privacy policy",
-        "tags": [
-          {
-            "name": "@Smoke",
-            "line": 1
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "the user is on the registration page",
             "result": {
               "status": "passed",
-              "duration": 3683000000
+              "duration": 3858000000
             }
           },
           {
@@ -485,21 +459,21 @@
               }
             ],
             "keyword": "When ",
-            "line": 52,
+            "line": 51,
             "name": "the user registers with the following details:",
             "result": {
               "status": "passed",
-              "duration": 1662000000
+              "duration": 1659000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 55,
+            "line": 54,
             "name": "user click the submit button",
             "result": {
               "status": "passed",
-              "duration": 1565000000
+              "duration": 2055000000
             }
           },
           {
@@ -520,11 +494,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 56,
+            "line": 55,
             "name": "an error message should be displayed:",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           }
         ]

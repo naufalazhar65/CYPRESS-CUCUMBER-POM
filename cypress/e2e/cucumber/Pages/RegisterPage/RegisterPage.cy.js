@@ -2,7 +2,6 @@ class RegisterPage {
 	enterURL() {
 		cy.visit('/index.php?route=account/register')
 		cy.title().should('eq', 'Register Account')
-
 	}
 
 	fillRegistrationForm(firstName, lastName, email, telephone, password, confirmPassword) {
@@ -25,22 +24,22 @@ class RegisterPage {
 	}
 	
 	verifySuccessfulRegistration() {
-		return cy.contains(' Your Account Has Been Created!')
+		return cy.contains('Your Account Has Been Created!')
 	}
 	
 	verifyErrorMessage(expectedError) {
 		cy.get('#account-register').then($register => {
-			if ($register) {
+			if ($register.length) {
 				cy.get('.text-danger, #account-register > .alert')
 					.should('be.visible')
-					.and('include.text', expectedError);
+					.and('include.text', expectedError)
 			} else {
 				cy.get('.alert-dismissible')
 					.should('be.visible')
-					.and('include.text', expectedError);
+					.and('include.text', expectedError)
 			}
-		});
-		return this;
+		})
+		return this
 	}
 }
 
