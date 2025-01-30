@@ -54,7 +54,7 @@ Then('I should see the dashboard', () => cy.url().should('include', '/dashboard'
 Execute tests using the following command:
 
 ```bash
-npm test
+npm run cypress:open
 ```
 
 ## Reporting
