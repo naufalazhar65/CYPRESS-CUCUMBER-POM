@@ -65,14 +65,3 @@ Test reports are generated automatically and can be found at:
 cypress/reports/html/index.html
 ```
 
-## Contributing
-
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License.
-
